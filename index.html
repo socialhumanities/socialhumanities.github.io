@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مرصد العلوم الإنسانية والاجتماعية</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Tahoma, sans-serif;
+            background: #f7f8fa;
+            color: #222;
+            line-height: 1.8;
+        }
+
+        /* الشريط العلوي */
+        header {
+            background: #123b5d;
+            color: white;
+            padding: 18px 6%;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 13px;
+            font-weight: normal;
+            opacity: .85;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #d8b56a;
+        }
+
+        /* الواجهة الرئيسية */
+        .hero {
+            background: linear-gradient(
+                rgba(18,59,93,.90),
+                rgba(18,59,93,.90)
+            ),
+            radial-gradient(circle at center, #315d7e, #0c2941);
+
+            color: white;
+            text-align: center;
+            padding: 95px 20px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: auto;
+            opacity: .92;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 28px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button-primary {
+            background: #d8b56a;
+            color: #172b3d;
+        }
+
+        .button-secondary {
+            border: 1px solid white;
+            color: white;
+        }
+
+        /* الأقسام */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: #123b5d;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        /* البطاقات */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #e4e7eb;
+            box-shadow: 0 5px 18px rgba(0,0,0,.05);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,.10);
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #123b5d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* قسم التعريف */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        /* المقالات */
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .article {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e4e7eb;
+        }
+
+        .article-top {
+            height: 120px;
+            background: #d8b56a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+        }
+
+        .article-content {
+            padding: 22px;
+        }
+
+        .article-content h3 {
+            color: #123b5d;
+            margin-bottom: 8px;
+        }
+
+        /* دعوة للمشاركة */
+        .cta {
+            background: #123b5d;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #0b2538;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: .8;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* الهاتف */
+        @media (max-width: 800px) {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero {
+                padding: 65px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cards,
+            .articles {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- رأس الموقع -->
+<header>
+    <div class="header-content">
+
+        <div class="logo">
+            مرصد العلوم الإنسانية والاجتماعية
+            <span>منصة معرفية للبحث والدراسة</span>
+        </div>
+
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#research">البحوث</a>
+            <a href="#articles">المقالات</a>
+            <a href="#researchers">الباحثون</a>
+            <a href="#library">المكتبة</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- الواجهة الرئيسية -->
+<section class="hero">
+
+    <h1>مرصد العلوم الإنسانية والاجتماعية</h1>
+
+    <p>
+        منصة معرفية تهتم بالبحث العلمي والدراسات الإنسانية والاجتماعية،
+        وتسعى إلى نشر المعرفة وتشجيع الحوار الأكاديمي.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#articles" class="button button-primary">
+            استكشف المقالات
+        </a>
+
+        <a href="#research" class="button button-secondary">
+            اكتشف الأبحاث
+        </a>
+    </div>
+
+</section>
+
+
+<!-- مجالات المرصد -->
+<section class="container" id="research">
+
+    <div class="section-title">
+        <h2>مجالات العلوم الإنسانية والاجتماعية</h2>
+        <p>مساحات للبحث والتحليل والنقاش العلمي</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🔬</div>
+            <h3>علم الاجتماع</h3>
+            <p>
+                دراسة المجتمع والتحولات الاجتماعية والعلاقات والمؤسسات
+                والظواهر الاجتماعية المعاصرة.
+            </p>
+            <a href="#">اكتشف المزيد ←</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h3>الأنثروبولوجيا</h3>
+            <p>
+                فهم الإنسان والثقافة والممارسات الاجتماعية والرموز
+                والأنماط الثقافية المختلفة.
+            </p>
+            <a href="#">اكتشف المزيد ←</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>العلوم الإنسانية</h3>
+            <p>
+                فضاء يهتم بالفكر والتاريخ والفلسفة والدراسات الثقافية
+                والإنسانية.
+            </p>
+            <a href="#">اكتشف المزيد ←</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- من نحن -->
+<section class="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>عن المرصد</h2>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                مرصد العلوم الإنسانية والاجتماعية هو فضاء معرفي مستقل
+                يهدف إلى تقريب المعرفة العلمية من الباحثين والطلبة
+                والمهتمين بقضايا المجتمع والإنسان.
+            </p>
+
+            <br>
+
+            <p>
+                نسعى إلى توفير محتوى أكاديمي مبسط ورصين، وتشجيع البحث
+                العلمي والحوار والنقاش حول التحولات الاجتماعية والثقافية
+                والسياسية والاقتصادية.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- المقالات -->
+<section class="container" id="articles">
+
+    <div class="section-title">
+        <h2>أحدث المقالات والدراسات</h2>
+        <p>نماذج من المحتوى الذي سيُنشر في المرصد</p>
+    </div>
+
+    <div class="articles">
+
+        <article class="article">
+
+            <div class="article-top">🏙️</div>
+
+            <div class="article-content">
+
+                <h3>
+                    التحولات الاجتماعية في المجتمع المعاصر
+                </h3>
+
+                <p>
+                    قراءة سوسيولوجية في التحولات التي يعرفها المجتمع
+                    والعلاقات الاجتماعية.
+                </p>
+
+                <a href="#">قراءة المقال ←</a>
+
+            </div>
+
+        </article>
+
+
+        <article class="article">
+
+            <div class="article-top">👥</div>
+
+            <div class="article-content">
+
+                <h3>
+                    الأسرة والتحولات الاجتماعية
+                </h3>
+
+                <p>
+                    دراسة في تغير الأدوار والمكانة والسلطة داخل الأسرة
+                    المعاصرة.
+                </p>
+
+                <a href="#">قراءة المقال ←</a>
+
+            </div>
+
+        </article>
+
+
+        <article class="article">
+
+            <div class="article-top">🌍</div>
+
+            <div class="article-content">
+
+                <h3>
+                    المجتمع والهجرة والتحولات الثقافية
+                </h3>
+
+                <p>
+                    مقاربة للآثار الاجتماعية والثقافية للهجرة والتحولات
+                    المرتبطة بها.
+                </p>
+
+                <a href="#">قراءة المقال ←</a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- الباحثون -->
+<section class="about" id="researchers">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>الباحثون والطلبة</h2>
+
+            <p>
+                فضاء للتعريف بالباحثين والطلبة ومشاريعهم واهتماماتهم العلمية
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">👨‍🏫</div>
+                <h3>الباحثون</h3>
+                <p>
+                    التعريف بالباحثين ومجالات تخصصهم وإنتاجهم العلمي.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>الطلبة</h3>
+                <p>
+                    عرض مشاريع الطلبة وأبحاثهم ومساهماتهم الأكاديمية.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h3>المساهمون</h3>
+                <p>
+                    استقبال المساهمات والمقالات والأفكار البحثية.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- المكتبة -->
+<section class="container" id="library">
+
+    <div class="section-title">
+
+        <h2>المكتبة الرقمية</h2>
+
+        <p>
+            مصادر ومراجع وأعمال تساعد الباحث والطالب
+        </p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📖</div>
+            <h3>كتب</h3>
+            <p>
+                فهرس للكتب والمراجع المهمة في العلوم الإنسانية والاجتماعية.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h3>دراسات وأبحاث</h3>
+            <p>
+                مجموعة من الدراسات والأبحاث العلمية والمقالات الأكاديمية.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔎</div>
+            <h3>مصادر للباحث</h3>
+            <p>
+                أدوات ومصادر تساعد الطلبة والباحثين في إنجاز أعمالهم.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- دعوة للمشاركة -->
+<section class="cta">
+
+    <h2>هل لديك بحث أو مقال علمي؟</h2>
+
+    <p>
+        يمكنك المساهمة في إثراء المحتوى العلمي للمرصد.
+    </p>
+
+    <a href="#contact" class="button button-primary">
+        ساهم معنا
+    </a>
+
+</section>
+
+
+<!-- التواصل -->
+<footer id="contact">
+
+    <div class="footer-links">
+
+        <a href="#">الرئيسية</a>
+        <a href="#articles">المقالات</a>
+        <a href="#research">البحوث</a>
+        <a href="#researchers">الباحثون</a>
+        <a href="#library">المكتبة</a>
+
+    </div>
+
+    <p>
+        © 2026 مرصد العلوم الإنسانية والاجتماعية
+    </p>
+
+    <p>
+        منصة معرفية للبحث والدراسة
+    </p>
+
+</footer>
+
+</body>
+</html>
