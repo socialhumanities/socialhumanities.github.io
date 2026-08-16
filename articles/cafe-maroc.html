@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>المقهى المغربي: من فضاء للقاء إلى فضاء للعمل والدراسة | شذرات</title>
+
+  <meta name="description" content="شذرة تحليلية حول تحولات المقهى المغربي من فضاء للقاء إلى فضاء للعمل والدراسة، من منظور العلوم الاجتماعية.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#5f1d2d;
+      --primary-dark:#42121e;
+      --secondary:#9c6b3d;
+      --background:#f8f6f2;
+      --surface:#ffffff;
+      --text:#252525;
+      --muted:#6e6e6e;
+      --border:#e3ddd5;
+      --soft:#f0ebe4;
+      --max-width:900px;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:"Cairo",sans-serif;
+      background:var(--background);
+      color:var(--text);
+      line-height:2;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    header{
+      background:white;
+      border-bottom:1px solid var(--border);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    .navbar{
+      width:min(92%,1100px);
+      margin:auto;
+      min-height:74px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand-mark{
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      background:var(--primary);
+      color:white;
+      display:grid;
+      place-items:center;
+      font-size:1.2rem;
+      font-weight:800;
+    }
+
+    .brand h1{
+      font-size:1.25rem;
+      color:var(--primary);
+      line-height:1.2;
+    }
+
+    .brand small{
+      color:var(--muted);
+      font-size:.73rem;
+    }
+
+    .back-link{
+      color:var(--primary);
+      font-weight:700;
+      font-size:.9rem;
+    }
+
+    .hero{
+      background:var(--primary-dark);
+      color:white;
+      padding:70px 0 60px;
+    }
+
+    .hero-inner{
+      width:min(92%,var(--max-width));
+      margin:auto;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      font-size:.82rem;
+      margin-bottom:20px;
+    }
+
+    .hero h2{
+      font-size:clamp(2rem,5vw,3.4rem);
+      line-height:1.5;
+      margin-bottom:18px;
+    }
+
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:18px;
+      color:rgba(255,255,255,.78);
+      font-size:.86rem;
+    }
+
+    main{
+      width:min(92%,var(--max-width));
+      margin:45px auto 80px;
+    }
+
+    .article{
+      background:white;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:48px;
+    }
+
+    .lead{
+      font-size:1.08rem;
+      color:#454545;
+      border-right:4px solid var(--secondary);
+      padding:16px 20px;
+      background:var(--soft);
+      margin-bottom:32px;
+    }
+
+    h3{
+      color:var(--primary-dark);
+      font-size:1.45rem;
+      margin:34px 0 14px;
+    }
+
+    p{
+      margin-bottom:18px;
+    }
+
+    .question{
+      background:#f7f0e7;
+      color:#5b4029;
+      border-radius:12px;
+      padding:18px 20px;
+      font-weight:700;
+      margin:24px 0;
+    }
+
+    .keywords{
+      border-top:1px solid var(--border);
+      margin-top:38px;
+      padding-top:22px;
+    }
+
+    .keywords span{
+      display:inline-block;
+      background:var(--soft);
+      color:var(--primary);
+      padding:5px 10px;
+      border-radius:999px;
+      font-size:.8rem;
+      margin:4px;
+    }
+
+    .references{
+      margin-top:45px;
+      background:#faf8f5;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:28px;
+    }
+
+    .references h3{
+      margin-top:0;
+    }
+
+    .references ul{
+      padding-right:20px;
+    }
+
+    .references li{
+      margin-bottom:14px;
+      color:#4f4f4f;
+      font-size:.92rem;
+    }
+
+    .citation-box{
+      margin-top:30px;
+      padding:22px;
+      border:1px dashed #c9bbaa;
+      border-radius:12px;
+      background:#fff;
+    }
+
+    .citation-box strong{
+      color:var(--primary);
+    }
+
+    footer{
+      background:#241116;
+      color:white;
+      text-align:center;
+      padding:30px 15px;
+    }
+
+    footer p{
+      margin:0;
+      color:rgba(255,255,255,.68);
+      font-size:.84rem;
+    }
+
+    @media(max-width:650px){
+      .article{
+        padding:26px 20px;
+      }
+
+      .hero{
+        padding:50px 0;
+      }
+
+      .brand small{
+        display:none;
+      }
+
+      .back-link{
+        font-size:.78rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+
+    <a href="../index.html" class="brand">
+      <div class="brand-mark">ش</div>
+
+      <div>
+        <h1>شذرات</h1>
+        <small>منصة للعلوم الاجتماعية والإنسانية والقانونية</small>
+      </div>
+    </a>
+
+    <a href="../index.html#latest" class="back-link">
+      ← العودة إلى الشذرات
+    </a>
+
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <span class="tag">شذرة تحليلية · تحولات اجتماعية</span>
+
+    <h2>
+      المقهى المغربي: من فضاء للقاء إلى فضاء للعمل والدراسة
+    </h2>
+
+    <div class="meta">
+      <span>✍ هيئة تحرير شذرات</span>
+      <span>📅 16 غشت 2026</span>
+      <span>⏱ نحو 7 دقائق قراءة</span>
+    </div>
+
+  </div>
+</section>
+
+<main>
+
+  <article class="article">
+
+    <div class="lead">
+      قد يبدو مشهد شاب يفتح حاسوبه في أحد المقاهي المغربية عاديًا،
+      لكنه يطرح سؤالًا أوسع حول تحولات المقهى ووظيفته داخل الحياة الاجتماعية.
+    </div>
+
+    <h3>مشهد من اليومي</h3>
+
+    <p>
+      في أحد المقاهي المغربية، قد تجتمع على طاولات متجاورة استخدامات مختلفة
+      للمكان. أشخاص يتبادلون الحديث، آخرون يتابعون مباراة، طالب يراجع أوراقه،
+      وشخص يفتح حاسوبه المحمول ويقضي وقتًا أمام الشاشة.
+    </p>
+
+    <p>
+      المشهد يبدو عاديًا، لكن النظر إليه من زاوية العلوم الاجتماعية
+      يسمح بتحويله من تفصيل يومي إلى سؤال معرفي.
+    </p>
+
+    <div class="question">
+      هل ما يزال المقهى مجرد مكان لشرب القهوة واللقاء،
+      أم أصبح يؤدي وظائف اجتماعية جديدة تتجاوز وظيفته التقليدية؟
+    </div>
+
+    <h3>المقهى بوصفه فضاءً اجتماعيًا</h3>
+
+    <p>
+      لا يمكن اختزال المقهى في كونه نشاطًا تجاريًا يقدم المشروبات.
+      فمن منظور سوسيولوجي، يكتسب المكان معناه أيضًا من العلاقات والممارسات
+      التي تتشكل داخله.
+    </p>
+
+    <p>
+      تناول الباحث سعيد Graiouid المقهى المغربي باعتباره فضاءً تتشكل فيه
+      أشكال من الاجتماع غير الرسمي والتفاعل الاجتماعي، كما يمكن أن تظهر داخله
+      تناقضات المجتمع وعلاقات القوة.
+    </p>
+
+    <p>
+      وهذا يجعل المقهى مكانًا مثيرًا للاهتمام بالنسبة للباحث الاجتماعي،
+      لأن جلسة تبدو عادية قد تكشف عن طريقة استخدام الأفراد للمدينة،
+      وعن حدود العلاقة بين الفضاء الخاص والفضاء العام.
+    </p>
+
+    <h3>مكان بين البيت والمؤسسة</h3>
+
+    <p>
+      يمكن فهم جزء من هذه الظاهرة من خلال مفهوم «المكان الثالث»،
+      أي الفضاءات الاجتماعية الموجودة خارج المنزل ومكان العمل الرسمي،
+      والتي تسمح باللقاء والتفاعل.
+    </p>
+
+    <p>
+      وفي هذا السياق يمكن للمقهى أن يجمع بين وظائف متعددة:
+      الاستهلاك، اللقاء، الاسترخاء، القراءة، الدراسة، وأحيانًا العمل.
+    </p>
+
+    <p>
+      وتصبح المسألة أكثر إثارة عندما نلاحظ استخدام بعض المقاهي
+      كمكان للمراجعة أو الكتابة أو إنجاز مهام رقمية.
+    </p>
+
+    <div class="question">
+      هل يمكن أن يتحول فضاء تجاري، بفعل استخدام الناس له،
+      إلى فضاء للدراسة والعمل وإنتاج العلاقات الاجتماعية؟
+    </div>
+
+    <h3>من الجلسة الاجتماعية إلى الحاسوب المحمول</h3>
+
+    <p>
+      أضاف التحول الرقمي بُعدًا جديدًا إلى استخدام المقاهي.
+      فالإنترنت المحمول والحواسيب والهواتف الذكية تسمح بإنجاز أنشطة
+      كانت مرتبطة سابقًا بمكان محدد.
+    </p>
+
+    <p>
+      لكن رؤية عدد من الأشخاص يعملون بحواسيبهم في المقاهي لا تكفي للقول
+      إن «المقهى المغربي تحول إلى مكتب».
+    </p>
+
+    <p>
+      هنا تظهر ضرورة الفصل بين الملاحظة والاستنتاج.
+      يمكن أن نلاحظ وجود استخدامات جديدة للمقهى،
+      أما تحديد حجم هذه الظاهرة ومن يقوم بها وفي أي مدن وأحياء،
+      فيحتاج إلى دراسة ميدانية أوسع.
+    </p>
+
+    <h3>ليس كل مقهى واحدًا</h3>
+
+    <p>
+      سيكون من الخطأ التعامل مع جميع المقاهي المغربية
+      وكأنها فضاء اجتماعي متجانس.
+    </p>
+
+    <p>
+      فالموقع، والأسعار، وطبيعة الحي، وتصميم المكان، والفئات التي ترتاده،
+      كلها عناصر يمكن أن تؤثر في طريقة استخدامه.
+    </p>
+
+    <p>
+      كما تطرح هذه الفضاءات أسئلة حول النوع الاجتماعي وإمكانية الولوج إليها
+      واختلاف استخدام الفضاء الحضري بين الفئات الاجتماعية.
+    </p>
+
+    <div class="question">
+      من يستطيع الجلوس في المقهى؟ وفي أي حي؟ وفي أي وقت؟
+      وبأي تكلفة؟ ولأي غرض؟
+    </div>
+
+    <h3>فضاء تجاري يؤدي وظيفة اجتماعية</h3>
+
+    <p>
+      يظل المقهى في الأصل فضاءً تجاريًا، والاستمرار فيه يرتبط غالبًا بالاستهلاك.
+      لكنه في الوقت نفسه قد يؤدي وظائف قريبة من بعض وظائف الفضاء الاجتماعي المشترك.
+    </p>
+
+    <p>
+      وهنا تظهر إحدى المفارقات المهمة:
+      مكان خاص من حيث الملكية، لكنه قد يصبح اجتماعيًا من حيث الاستخدام.
+    </p>
+
+    <h3>من الملاحظة إلى السؤال</h3>
+
+    <p>
+      ربما لا تكمن أهمية مشهد شخص يفتح حاسوبه في المقهى في الحاسوب نفسه،
+      بل في الأسئلة التي يسمح لنا بطرحها.
+    </p>
+
+    <p>
+      هل تتغير الحدود بين فضاء العمل وفضاء الترفيه؟
+      وهل يبحث بعض الشباب عن بدائل لمكان الدراسة أو العمل؟
+      وهل يختلف هذا الاستخدام بحسب الطبقة الاجتماعية والمدينة والعمر؟
+    </p>
+
+    <p>
+      لا تستطيع شذرة قصيرة الإجابة عن كل هذه الأسئلة،
+      لكنها تستطيع أن تفعل شيئًا يسبق الإجابة:
+      أن تجعلنا نلاحظ ما أصبح مألوفًا إلى درجة أننا لم نعد نسأل عنه.
+    </p>
+
+    <p>
+      وهنا تبدأ إحدى وظائف العلوم الاجتماعية:
+      تحويل تفصيل من الحياة اليومية إلى سؤال قابل للفهم والبحث.
+    </p>
+
+    <div class="keywords">
+      <strong>الكلمات المفتاحية:</strong><br>
+      <span>المقهى</span>
+      <span>المغرب</span>
+      <span>الفضاء العام</span>
+      <span>التحولات الاجتماعية</span>
+      <span>الشباب</span>
+      <span>العمل</span>
+      <span>الدراسة</span>
+    </div>
+
+    <section class="references">
+
+      <h3>المراجع</h3>
+
+      <ul>
+        <li>
+          Graiouid, S. (2007).
+          A Place on the Terrace: Café Culture and the Public Sphere in Morocco.
+          The Journal of North African Studies, 12(4), 531–550.
+          DOI: 10.1080/13629380701480568.
+        </li>
+
+        <li>
+          Newcomb, R. (2006).
+          Gendering the City, Gendering the Nation:
+          Contesting Urban Space in Fes, Morocco.
+          City & Society, 18(2), 288–311.
+        </li>
+
+        <li>
+          Ferreira, J., Ferreira, C., & Bos, E. (2021).
+          Spaces of consumption, connection, and community:
+          Exploring the role of the coffee shop in urban lives.
+          Geoforum, 119, 21–29.
+        </li>
+      </ul>
+
+    </section>
+
+    <div class="citation-box">
+      <strong>طريقة مقترحة للاستشهاد:</strong>
+      <p>
+        هيئة تحرير شذرات، «المقهى المغربي: من فضاء للقاء إلى فضاء للعمل والدراسة»،
+        منصة شذرات، 16 غشت 2026.
+      </p>
+    </div>
+
+  </article>
+
+</main>
+
+<footer>
+  <p>
+    © 2026 منصة شذرات — من تفاصيل اليومي إلى أسئلة المعرفة.
+  </p>
+</footer>
+
+</body>
+</html>
