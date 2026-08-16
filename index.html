@@ -564,11 +564,15 @@
 
     /* TEAM */
 
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
+   .team-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 35px auto 0;
+}
 
     .team-card {
       background: white;
