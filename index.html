@@ -151,18 +151,19 @@
       gap: 12px;
     }
 
-    .brand-mark {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: white;
-      display: grid;
-      place-items: center;
-      font-size: 1.35rem;
-      font-weight: 800;
+ .site-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
+}
+@media (max-width: 768px) {
+    .site-logo {
+        width: 56px;
+        height: 56px;
     }
-
+}
     .brand-text h1 {
       font-size: 1.35rem;
       color: var(--primary);
@@ -876,8 +877,10 @@
 <header>
   <div class="container navbar">
     <a href="#home" class="brand">
-      <div class="brand-mark">ش</div>
-      <div class="brand-text">
+<img src="logo.png"
+     alt="شعار منصة شذرات"
+     class="site-logo">
+        <div class="brand-text">
         <h1>شذرات</h1>
         <small>منصة للعلوم الاجتماعية والإنسانية والقانونية</small>
       </div>
