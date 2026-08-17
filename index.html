@@ -137,27 +137,29 @@
       backdrop-filter: blur(10px);
     }
 
-    .navbar {
-    min-height: 68px;
+   .navbar {
+    min-height: 105px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 25px;
+    padding: 10px 0;
 }
 
-   .brand {
+ .brand {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 14px;
     flex-shrink: 0;
+    text-decoration: none;
 }
- .site-logo {
-    width: 48px;
-    height: 48px;
+.site-logo {
+    width: 78px;
+    height: 78px;
     object-fit: contain;
     display: block;
-    border-radius: 8px;
-    flex-shrink: 0;
+    border-radius: 14px;
+    filter: drop-shadow(0 6px 12px rgba(95,29,45,0.15));
 }
 @media (max-width: 768px) {
     .site-logo {
@@ -166,28 +168,46 @@
     }
 }
     .brand-text h1 {
-      font-size: 1.35rem;
-      color: var(--primary);
-      line-height: 1.2;
-    }
+    margin: 0;
+    color: #4b1323;
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
 
-    .brand-text small {
-      color: var(--muted);
-      font-size: 0.72rem;
-    }
+   .brand-text small {
+    display: block;
+    margin-top: 6px;
+    color: #6b5057;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+}
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 22px;
+    justify-content: flex-start;
+    gap: 5px;
     list-style: none;
-    font-size: 1.15rem;
-    font-weight: 700;
-}
-
-.nav-links a {
-    padding: 10px 6px;
-    transition: 0.25s;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
     white-space: nowrap;
+}
+.nav-links a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 11px;
+    border-radius: 10px;
+    color: #35141e;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.25s ease;
 }
 
 .nav-links a:hover {
@@ -195,16 +215,21 @@
 }
     }
 
-   .submit-btn {
-    background: var(--primary);
-    color: #fff !important;
-    padding: 12px 22px;
-    border-radius: 10px;
+  .submit-btn {
+    background: linear-gradient(135deg, #4b1323, #6b2438) !important;
+    color: #ffffff !important;
+    padding: 14px 20px !important;
+    border-radius: 12px !important;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 800;
     white-space: nowrap;
+    box-shadow: 0 7px 18px rgba(95,29,45,0.20);
 }
 
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 11px 24px rgba(95,29,45,0.28);
+}
     .menu-button {
       display: none;
       background: none;
@@ -875,6 +900,284 @@
         display: none;
       }
     }
+      /* =========================================
+   SHADHARAT - PREMIUM HEADER
+   ========================================= */
+
+/* الهيدر */
+header {
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid rgba(95, 29, 45, 0.12);
+    box-shadow: 0 8px 30px rgba(40, 20, 25, 0.07);
+}
+
+/* الحاوية الرئيسية */
+header .navbar {
+    width: min(96%, 1500px);
+    margin: 0 auto;
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 12px;
+    padding: 15px 10px 12px;
+}
+
+/* =========================
+   الهوية + اللوغو
+   ========================= */
+
+header .brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 15px;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* اللوغو */
+header .site-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* اسم المنصة والوصف */
+header .brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+header .brand-text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--primary);
+}
+
+header .brand-text small {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5f5960;
+    line-height: 1.5;
+}
+
+/* =========================
+   شريط التنقل
+   ========================= */
+
+header .nav-links {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 8px;
+    list-style: none;
+
+    border-top: 1px solid rgba(95, 29, 45, 0.10);
+}
+
+header .nav-links li {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+}
+
+/* الأزرار */
+header .nav-links a {
+    position: relative;
+    display: block;
+
+    padding: 10px 12px;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: #30292c;
+    text-decoration: none;
+    white-space: nowrap;
+
+    border-radius: 10px;
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* الخط الذهبي أسفل الزر */
+header .nav-links a:not(.submit-btn)::after {
+    content: "";
+    position: absolute;
+
+    right: 50%;
+    bottom: 3px;
+
+    width: 0;
+    height: 2px;
+
+    background: #b38b46;
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+/* عند مرور الفأرة */
+header .nav-links a:not(.submit-btn):hover {
+    color: var(--primary);
+    background: rgba(95, 29, 45, 0.04);
+    transform: translateY(-2px);
+}
+
+header .nav-links a:not(.submit-btn):hover::after {
+    width: 55%;
+    right: 22.5%;
+}
+
+/* زر أرسل شذرتك */
+header .nav-links .submit-btn {
+    padding: 11px 18px;
+
+    color: #ffffff !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            #7b2e42
+        );
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 6px 18px rgba(95, 29, 45, 0.20);
+}
+
+header .nav-links .submit-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 22px rgba(95, 29, 45, 0.28);
+}
+
+/* زر الهاتف */
+header .menu-button {
+    display: none;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    header .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .nav-links a {
+        font-size: 1rem;
+        padding: 9px 10px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    header .navbar {
+        min-height: auto;
+        padding: 10px 14px;
+    }
+
+    header .brand {
+        padding-left: 55px;
+    }
+
+    header .site-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    header .brand-text h1 {
+        font-size: 1.35rem;
+    }
+
+    header .brand-text small {
+        font-size: 0.82rem;
+    }
+
+    header .menu-button {
+        display: block;
+
+        position: absolute;
+        left: 16px;
+        top: 22px;
+
+        font-size: 1.7rem;
+        cursor: pointer;
+
+        background: transparent;
+        border: 0;
+
+        color: var(--primary);
+    }
+
+    header .nav-links {
+        display: none;
+
+        width: 100%;
+        padding: 12px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        background: #ffffff;
+
+        border: 1px solid rgba(95, 29, 45, 0.10);
+        border-radius: 15px;
+
+        box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
+    header .nav-links.active {
+        display: flex;
+    }
+
+    header .nav-links li {
+        width: 100%;
+    }
+
+    header .nav-links a {
+        width: 100%;
+        text-align: right;
+        padding: 12px 14px;
+    }
+
+    header .nav-links .submit-btn {
+        text-align: center;
+        margin-top: 5px;
+    }
+}
   </style>
 </head>
 
@@ -882,28 +1185,57 @@
 
 <header>
   <div class="container navbar">
-    <a href="#home" class="brand">
-<img src="logo.png.png"
-     alt="شعار منصة شذرات"
-     class="site-logo">
-        <small>منصة للعلوم الاجتماعية والإنسانية والقانونية</small>
-      </div>
-    </a>
+  <a href="#home" class="brand">
 
+    <img src="logo.png.png"
+         alt="شعار منصة شذرات"
+         class="site-logo">
+
+    <div class="brand-text">
+        <h1>شذرات</h1>
+        <small>منصة للعلوم الاجتماعية والانسانية والقانونية</small>
+    </div>
+
+</a>
     <button class="menu-button" id="menuButton" aria-label="فتح القائمة">
       ☰
     </button>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">الرئيسية</a></li>
+  <ul class="nav-links" id="navLinks">
+
+  <li>
+    <a href="#home">الرئيسية</a>
+  </li>
+
+  <li>
     <a href="about.html">عن المنصة</a>
-      <li><a href="#categories">الأقسام</a></li>
-      <li><a href="#latest">الشذرات</a></li>
-      <li><a href="#method">منهجية الشذرة</a></li>
-      <li><a href="#conditions">شروط النشر</a></li>
-      <li><a href="#team">هيئة التحرير</a></li>
-      <li><a href="#submit" class="submit-btn">أرسل شذرتك</a></li>
-    </ul>
+  </li>
+
+  <li>
+    <a href="#categories">الأقسام</a>
+  </li>
+
+  <li>
+    <a href="#latest">الشذرات</a>
+  </li>
+
+  <li>
+    <a href="#method">منهجية الشذرة</a>
+  </li>
+
+  <li>
+    <a href="#conditions">شروط النشر</a>
+  </li>
+
+  <li>
+    <a href="#team">هيئة التحرير</a>
+  </li>
+
+  <li>
+    <a href="#submit" class="submit-btn">أرسل شذرتك</a>
+  </li>
+
+</ul>
   </div>
 </header>
 
@@ -942,7 +1274,8 @@
       <div class="intro-box">
         <div class="intro-text">
           <span style="color:var(--secondary);font-weight:700;">عن المنصة</span>
-          <h2>لماذا «شذرات»؟</h2>
+          <h2>لما
+              ذا «شذرات»؟</h2>
 
           <p>
             كثير من الأسئلة العلمية الكبرى تبدأ من ملاحظة صغيرة:
