@@ -8,6 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
     <meta name="description"
           content="شذرات، منصة أكاديمية مستقلة في العلوم الاجتماعية والإنسانية والقانون، تنشر مقالات وتحليلات ودراسات معرفية.">
 
@@ -1177,6 +1178,40 @@ header .menu-button {
         text-align: center;
         margin-top: 5px;
     }
+}/* =========================
+   SHATHARAT HEADER BACKGROUND
+   ========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(195, 145, 69, 0.14),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(95, 29, 45, 0.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #fffaf3 0%,
+            #f9eee7 42%,
+            #f3e3e3 72%,
+            #efe5e1 100%
+        );
+
+    border-bottom: 1px solid rgba(95, 29, 45, 0.13);
+
+    box-shadow:
+        0 8px 28px rgba(62, 25, 35, 0.08);
+
+    backdrop-filter: blur(12px);
 }
   </style>
 </head>
