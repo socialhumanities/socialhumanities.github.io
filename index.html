@@ -16,21 +16,7 @@
 
     <link rel="canonical" href="https://socialhumanities.github.io/">
 
-    <title>شذرات | منصة العلوم الاجتماعية والإنسانية والقانون</title>
-
-  <title>شذرات | منصة للعلوم الاجتماعية والإنسانية والقانونية</title>
-    <!-- Structured Data for Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "شذرات",
-  "alternateName": "منصة العلوم الاجتماعية والإنسانية والقانونية",
-  "url": "https://socialhumanities.github.io/",
-  "description": "منصة أكاديمية مستقلة في العلوم الاجتماعية والإنسانية والقانونية، تنشر مقالات وشذرات ودراسات معرفية باللغة العربية.",
-  "inLanguage": "ar"
-}
-</script>
+    <title>شذرات | منصة للعلوم الاجتماعية والإنسانية والقانونية</title>
     <!-- Structured Data for Google -->
 <script type="application/ld+json">
 {
@@ -214,9 +200,8 @@
 .nav-links a:hover {
     color: var(--primary);
 }
-    }
 
-  .submit-btn {
+.submit-btn {
     background: linear-gradient(135deg, #4b1323, #6b2438) !important;
     color: #ffffff !important;
     padding: 14px 20px !important;
@@ -415,6 +400,9 @@
       overflow: hidden;
       border: 1px solid var(--border);
       transition: 0.25s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .article-card:hover {
@@ -430,6 +418,9 @@
 
     .article-body {
       padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .article-tag {
@@ -456,7 +447,21 @@
       margin-bottom: 15px;
     }
 
+    .read-more {
+      display: inline-block;
+      margin-top: auto;
+      margin-bottom: 16px;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .read-more:hover {
+      color: var(--secondary);
+    }
+
     .article-meta {
+      margin-top: auto;
       padding-top: 14px;
       border-top: 1px solid var(--border);
       color: #858585;
@@ -1448,356 +1453,299 @@ header {
         <span>أحدث المنشورات</span>
         <h2>شذرات من الواقع</h2>
         <p>
-          نماذج أولية لطريقة تقديم المساهمات داخل المنصة.
+          قراءات قصيرة ومنظمة تنطلق من تفاصيل الواقع الاجتماعي
+          نحو السؤال والتحليل العلمي.
         </p>
       </div>
 
       <div class="articles-grid">
 
+        <!-- 01 السياسات العمومية -->
         <article class="article-card">
           <img
             class="article-image"
-            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
-            alt="مقهى والعمل عن بعد">
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1772525379803-571add7d87a8?auto=format&fit=crop&w=1200&q=80"
+            alt="فضاء لتقديم خدمة عمومية للمواطنين">
+
+          <div class="article-body">
+            <span class="article-tag">السياسات العمومية</span>
+
+            <h3>
+              حين تصل السياسة العمومية إلى المواطن:
+              المسافة بين القرار والتطبيق
+            </h3>
+
+            <p>
+              قراءة اجتماعية في الطريقة التي تتحول بها القرارات والبرامج
+              العمومية من نصوص ومخططات إلى تجربة يومية يعيشها المواطن.
+            </p>
+
+            <a class="read-more"
+               href="articles/public-policy-implementation.html">
+              اقرأ الشذرة كاملة ←
+            </a>
+
+            <div class="article-meta">
+              <span>هيئة تحرير شذرات</span>
+              <span>9 شتنبر 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 الواسطة -->
+        <article class="article-card">
+          <img
+            class="article-image"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
+            alt="العلاقات الاجتماعية داخل فضاء مهني">
+
+          <div class="article-body">
+            <span class="article-tag">شذرات اجتماعية</span>
+
+            <h3>حين تصبح المعرفة أقصر من المسطرة</h3>
+
+            <p>
+              ماذا يحدث عندما تصبح معرفة الشخص المناسب أكثر فعالية من معرفة
+              المسطرة؟ قراءة سوسيولوجية في الواسطة والعلاقات الاجتماعية
+              والثقة بالمؤسسات في المغرب.
+            </p>
+
+            <a class="read-more"
+               href="articles/wasta-morocco.html">
+              اقرأ الشذرة كاملة ←
+            </a>
+
+            <div class="article-meta">
+              <span>هيئة تحرير شذرات</span>
+              <span>23 غشت 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 المستشفى والانتظار -->
+        <article class="article-card">
+          <img
+            class="article-image"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80"
+            alt="مرفق صحي ومستشفى">
+
+          <div class="article-body">
+            <span class="article-tag">شذرات اجتماعية</span>
+
+            <h3>
+              في قاعة الانتظار:
+              سوسيولوجيا الزمن داخل المستشفى المغربي
+            </h3>
+
+            <p>
+              قراءة اجتماعية في تجربة الانتظار داخل المستشفيات المغربية،
+              حيث يصبح الزمن جزءا من تجربة المرض وعلاقة المواطن بالمؤسسة الصحية.
+            </p>
+
+            <a class="read-more"
+               href="articles/waiting-hospitals-morocco.html">
+              اقرأ الشذرة كاملة ←
+            </a>
+
+            <div class="article-meta">
+              <span>هيئة تحرير شذرات</span>
+              <span>شذرة اجتماعية</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 الهاتف داخل الأسرة -->
+        <article class="article-card">
+          <img
+            class="article-image"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&q=80"
+            alt="هاتف ذكي في الحياة اليومية">
+
+          <div class="article-body">
+            <span class="article-tag">ملاحظات ميدانية</span>
+
+            <h3>
+              الهاتف فوق الطاولة:
+              كيف تغيرت جلساتنا العائلية دون أن ننتبه؟
+            </h3>
+
+            <p>
+              ملاحظة ميدانية تحليلية حول حضور الهاتف الذكي داخل الجلسات
+              العائلية، وتحول معنى الحضور والانتباه والتواصل في الحياة اليومية.
+            </p>
+
+            <a class="read-more"
+               href="articles/phone-family-gatherings.html">
+              اقرأ الشذرة كاملة ←
+            </a>
+
+            <div class="article-meta">
+              <span>هيئة تحرير شذرات</span>
+              <span>ملاحظة ميدانية</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 الهوية الرقمية -->
+        <article class="article-card">
+          <img
+            class="article-image"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
+            alt="استخدام التكنولوجيا والمنصات الرقمية">
+
+          <div class="article-body">
+            <span class="article-tag">الإنسان والثقافة</span>
+
+            <h3>
+              الهوية في زمن المنصات الرقمية:
+              كيف تغير وسائل التواصل الطريقة التي نرى بها أنفسنا؟
+            </h3>
+
+            <p>
+              قراءة علمية في الهوية الرقمية وتقديم الذات وتأثير وسائل التواصل
+              والخوارزميات في بناء الهوية والثقافة.
+            </p>
+
+            <a class="read-more"
+               href="articles/digital-identity-social-media.html">
+              اقرأ الشذرة كاملة ←
+            </a>
+
+            <div class="article-meta">
+              <span>هيئة تحرير شذرات</span>
+              <span>شذرة تحليلية علمية</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06 التحولات الاجتماعية في المغرب -->
+        <article class="article-card">
+          <img
+            class="article-image"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=82"
+            alt="فضاء حضري وتحولات في أنماط السكن">
+
+          <div class="article-body">
+            <span class="article-tag">المجتمع والتحولات</span>
+
+            <h3>
+              التحولات الاجتماعية في المغرب:
+              كيف يتغير المجتمع المغربي؟
+            </h3>
+
+            <p>
+              قراءة سوسيولوجية في تغير الأسرة والمدينة والشباب والعمل
+              والرقمنة وأنماط الحياة داخل المجتمع المغربي.
+            </p>
+
+            <a class="read-more"
+               href="articles/transformations-sociales-maroc.html">
+              اقرأ الشذرة كاملة ←
+            </a>
+
+            <div class="article-meta">
+              <span>هيئة تحرير شذرات</span>
+              <span>شذرة تحليلية</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 07 المقهى والعمل -->
+        <article class="article-card">
+          <img
+            class="article-image"
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80"
+            alt="فضاء عمل داخل مقهى">
 
           <div class="article-body">
             <span class="article-tag">تحولات اجتماعية</span>
 
             <h3>حين يتحول المقهى إلى فضاء للعمل</h3>
 
-           <p>
-  <a href="articles/cafe-maroc.html"
-     style="display:inline-block;margin-top:12px;color:#5f1d2d;font-weight:700;">
-    اقرأ الشذرة كاملة ←
-  </a>
-</p>
+            <p>
+              ملاحظة حول حضور العمل عن بعد داخل المقهى وكيف يعيد الاقتصاد
+              الرقمي تعريف العلاقة بين فضاء العمل والفضاء العام.
+            </p>
 
-<p>
-  ملاحظة حول حضور العمل عن بعد داخل المقهى وكيف يعيد الاقتصاد الرقمي تعريف العلاقة بين فضاء العمل والفضاء العام.
-</p>
+            <a class="read-more"
+               href="articles/cafe-maroc.html">
+              اقرأ الشذرة كاملة ←
+            </a>
 
             <div class="article-meta">
-              <span>هيئة التحرير</span>
+              <span>هيئة تحرير شذرات</span>
               <span>شذرة تحليلية</span>
             </div>
           </div>
         </article>
-<!-- الشذرة السادسة -->
-<!-- شذرة: الانتظار في المستشفيات المغربية -->
 
-<article class="article-card">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80"
-    alt="الانتظار في المستشفيات المغربية">
-
-  <div class="article-body">
-
-    <span class="article-tag">
-      شذرات اجتماعية
-    </span>
-
-    <h3>
-      في قاعة الانتظار:
-      سوسيولوجيا الزمن داخل المستشفى المغربي
-    </h3>
-
-    <p>
-      قراءة اجتماعية في تجربة الانتظار داخل المستشفيات المغربية،
-      حيث يصبح الزمن جزءا من تجربة المرض وعلاقة المواطن بالمؤسسة الصحية.
-    </p>
-
-    <a class="read-more"
-       href="articles/waiting-hospitals-morocco.html">
-      اقرأ الشذرة كاملة ←
-    </a>
-
-    <div class="article-meta">
-
-      <span>
-        هيئة تحرير شذرات
-      </span>
-
-      <span>
-        شذرة اجتماعية
-      </span>
-
-    </div>
-
-  </div>
-
-</article>
-<article class="article-card">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&q=80"
-    alt="الهاتف الذكي داخل جلسة عائلية">
-
-  <div class="article-body">
-
-    <span class="article-tag">
-      ملاحظات ميدانية
-    </span>
-
-    <h3>
-      الهاتف فوق الطاولة:
-      كيف تغيرت جلساتنا العائلية دون أن ننتبه؟
-    </h3>
-
-    <p>
-      ملاحظة ميدانية تحليلية حول حضور الهاتف الذكي داخل الجلسات العائلية،
-      وتحول معنى الحضور والانتباه والتواصل في الحياة اليومية.
-    </p>
-
-    <a href="articles/phone-family-gatherings.html"
-       style="display:inline-block;margin-top:12px;color:#5f1d2d;font-weight:700;">
-      اقرأ الشذرة كاملة ←
-    </a>
-
-    <div class="article-meta">
-      <span>هيئة تحرير شذرات</span>
-      <span>ملاحظة ميدانية تحليلية</span>
-    </div>
-
-  </div>
-
-</article>
+        <!-- 08 الحي والتحولات -->
         <article class="article-card">
           <img
             class="article-image"
-            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
-            alt="المدينة">
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+            alt="حي سكني ومجال عمراني">
 
           <div class="article-body">
             <span class="article-tag">المدينة والمجتمع</span>
 
             <h3>ماذا يخبرنا الحي عن التحولات الاجتماعية؟</h3>
 
-           <a href="articles/telephone-quartier.html"
-   style="display:inline-block;margin-top:12px;color:#5f1d2d;font-weight:700;">
-  اقرأ الشذرة كاملة ←
-</a>
+            <p>
               قراءة أولية في علاقة تغير المجال العمراني بأنماط السكن
               والتضامن والعلاقات بين السكان.
             </p>
 
+            <a class="read-more"
+               href="articles/telephone-quartier.html">
+              اقرأ الشذرة كاملة ←
+            </a>
+
             <div class="article-meta">
-              <span>هيئة التحرير</span>
+              <span>هيئة تحرير شذرات</span>
               <span>ملاحظة ميدانية</span>
             </div>
           </div>
         </article>
 
+        <!-- 09 القانون والممارسة -->
         <article class="article-card">
           <img
             class="article-image"
-            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
-            alt="القانون والمجتمع">
+            loading="lazy"
+            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
+            alt="وثائق وقانون وممارسة إدارية">
 
           <div class="article-body">
             <span class="article-tag">القانون والمجتمع</span>
- <h3>بين النص القانوني والممارسة اليومية</h3>
 
-<p>
-  قراءة اجتماعية قانونية في الفجوة بين النص القانوني والممارسة اليومية، وكيف تتشكل القاعدة القانونية داخل الواقع الاجتماعي.
-</p>
+            <h3>بين النص القانوني والممارسة اليومية</h3>
 
-<p>
-  <a href="articles/droit-pratique.html"
-     style="display:inline-block;margin-top:12px;color:#5f1d2d;font-weight:700;">
-    اقرأ الشذرة كاملة ←
-  </a>
-</p>
+            <p>
+              قراءة اجتماعية قانونية في الفجوة بين النص القانوني والممارسة
+              اليومية، وكيف تتشكل القاعدة القانونية داخل الواقع الاجتماعي.
+            </p>
+
+            <a class="read-more"
+               href="articles/droit-pratique.html">
+              اقرأ الشذرة كاملة ←
+            </a>
 
             <div class="article-meta">
-              <span>هيئة التحرير</span>
+              <span>هيئة تحرير شذرات</span>
               <span>قراءة قانونية</span>
             </div>
           </div>
         </article>
-<!-- المقال الرابع -->
-<!-- الشذرة الخامسة -->
 
-<article class="article-card">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
-    alt="الهوية الرقمية ووسائل التواصل الاجتماعي">
-
-  <div class="article-body">
-
-    <span class="article-tag">
-      الإنسان والثقافة
-    </span>
-
-    <h3>
-      الهوية في زمن المنصات الرقمية:
-      كيف تغير وسائل التواصل الطريقة التي نرى بها أنفسنا؟
-    </h3>
-
-    <p>
-      قراءة علمية في الهوية الرقمية وتقديم الذات وتأثير وسائل التواصل
-      والخوارزميات في بناء الهوية والثقافة.
-    </p>
-
-    <a href="articles/digital-identity-social-media.html"
-       style="display:inline-block;margin-top:12px;color:#5f1d2d;font-weight:700;">
-      اقرأ الشذرة كاملة ←
-    </a>
-
-    <div class="article-meta">
-
-      <span>هيئة تحرير شذرات</span>
-
-      <span>شذرة تحليلية علمية</span>
-
-    </div>
-
-  </div>
-
-</article>
-          <article class="article-card">
-
-  <img
-  class="article-image"
-  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
-  alt="الهوية الرقمية ووسائل التواصل الاجتماعي">
-
-  <div class="article-body">
-
-    <span class="article-tag">المجتمع والتحولات</span>
-
-    <h3>التحولات الاجتماعية في المغرب: كيف يتغير المجتمع المغربي؟</h3>
-
-    <p>
-      قراءة سوسيولوجية في تغير الأسرة والمدينة والشباب والعمل والرقمنة وانماط الحياة داخل المجتمع المغربي.
-    </p>
-
-    <p>
-      <a href="articles/transformations-sociales-maroc.html"
-         style="display:inline-block;margin-top:12px;color:#5f1d2d;font-weight:700;">
-        اقرأ الشذرة كاملة ←
-      </a>
-    </p>
-
-    <div class="article-meta">
-      <span>هيئة التحرير</span>
-      <span>شذرة تحليلية</span>
-    </div>
-
-  </div>
-
-</article>
-         <!-- أحدث شذرة: الواسطة في المجتمع المغربي -->
-
-<article class="article-card">
-
-  <div class="article-body">
-
-    <span class="article-tag">
-      شذرات اجتماعية
-    </span>
-<img
-  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
-  alt="العلاقات الاجتماعية والواسطة داخل المؤسسات"
-  style="
-    width:100%;
-    height:230px;
-    object-fit:cover;
-    border-radius:12px;
-    margin-bottom:20px;
-    display:block;
-  "
->
-    <h3>
-      حين تصبح المعرفة أقصر من المسطرة
-    </h3>
-
-    <p>
-      ماذا يحدث عندما تصبح معرفة الشخص المناسب أكثر فعالية
-      من معرفة المسطرة؟ قراءة سوسيولوجية في الواسطة والعلاقات
-      الاجتماعية والثقة بالمؤسسات في المغرب.
-    </p>
-
-    <a class="read-more"
-       href="articles/wasta-morocco.html">
-      اقرأ الشذرة كاملة ←
-    </a>
-
-    <div class="article-meta">
-      <span>هيئة تحرير شذرات</span>
-      <span>23 غشت 2026</span>
-    </div>
-
-  </div>
-<div class="grid3">
-<!-- شذرة السياسات العمومية -->
-
-<article class="article-card">
-
-  <img
-    class="article-image"
-    src="https://images.unsplash.com/photo-1772525379803-571add7d87a8?auto=format&fit=crop&w=1200&q=80"
-    alt="خدمة عمومية واستقبال المواطنين"
-  >
-
-  <div class="article-body">
-
-    <span class="article-tag">
-      السياسات العمومية
-    </span>
-
-    <h3>
-      حين تصل السياسة العمومية إلى المواطن:
-      المسافة بين القرار والتطبيق
-    </h3>
-
-    <p>
-      قراءة اجتماعية في الطريقة التي تتحول بها القرارات
-      والبرامج العمومية من نصوص ومخططات
-      إلى تجربة يومية يعيشها المواطن.
-    </p>
-
-    <a
-      class="read-more"
-      href="articles/public-policy-implementation.html"
-    >
-      اقرأ الشذرة كاملة ←
-    </a>
-
-    <div class="article-meta">
-
-      <span>
-        هيئة تحرير شذرات
-      </span>
-
-      <span>
-        9 شتنبر 2026
-      </span>
-
-    </div>
-
-  </div>
-
-</article>
-  <article class="card">
-
-    <div class="icon">
-
-
-  </article>
-
-
-    </div>
-
-  </div>
-
-</article>
-</div>
-</article> 
       </div>
     </div>
   </section>
@@ -2119,119 +2067,50 @@ header {
     <div class="container">
 
       <div class="submit-box">
-
         <h2>أرسل شذرتك</h2>
 
         <p>
-          قبل إرسال المساهمة، يرجى قراءة شروط النشر واحترام عدد الكلمات
-          والمراجع والضوابط الأخلاقية.
+          ترحب منصة شذرات بالمساهمات العلمية والفكرية في مجالات العلوم
+          الاجتماعية والإنسانية والقانونية. يرجى قراءة شروط النشر قبل الإرسال.
         </p>
 
-     <div class="notice">
-  ترحب منصة شذرات بالمساهمات العلمية والفكرية في مجالات العلوم الاجتماعية والانسانية والقانونية.
-  يرجى قراءة شروط النشر قبل إرسال المساهمة.
-</div>
+        <div class="notice">
+          تأكد من احترام نوع المساهمة، وعدد الكلمات، والمراجع،
+          والضوابط الأخلاقية والتحريرية للمنصة.
+        </div>
 
-<div style="text-align:center; margin-top:30px;">
+        <div style="text-align:center;margin-top:30px;">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc7FzN39xCCt9MwwBhJBcjnxnyvJnbMmLpWjbthBqzyPD4o-w/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              display:inline-block;
+              background:#5f1d2d;
+              color:#ffffff;
+              padding:15px 34px;
+              border-radius:10px;
+              text-decoration:none;
+              font-weight:700;
+              font-size:17px;
+            ">
+            إرسال مساهمتك الآن
+          </a>
 
-  <a 
-      href=https://docs.google.com/forms/d/e/1FAIpQLSc7FzN39xCCt9MwwBhJBcjnxnyvJnbMmLpWjbthBqzyPD4o-w/viewform?usp=dialog
-     rel="noopener noreferrer"
-     style="
-       display:inline-block;
-       background:#5f1d2d;
-       color:#ffffff;
-       padding:15px 34px;
-       border-radius:10px;
-       text-decoration:none;
-       font-weight:700;
-       font-size:17px;
-     ">
-    إرسال مساهمتك الآن
-  </a>
+          <p style="margin-top:15px;color:#666;">
+            سيتم تحويلك إلى استمارة منصة شذرات لإدخال بياناتك وإرفاق ملف المساهمة.
+          </p>
 
-  <p style="margin-top:15px;color:#666;">
-    سيتم تحويلك إلى استمارة منصة شذرات لإدخال بياناتك وإرفاق ملف المساهمة.
-  </p>
-
-  <p>
-    للاستفسار:
-    <a href="mailto:shatharat.platform@gmail.com">
-      shatharat.platform@gmail.com
-    </a>
-  </p>
-
-</div>
-          <div class="form-grid">
-
-            <div class="form-group">
-              <label for="name">الاسم الكامل</label>
-              <input id="name" type="text" placeholder="الاسم الكامل" required>
-            </div>
-
-            <div class="form-group">
-              <label for="email">البريد الإلكتروني</label>
-              <input id="email" type="email" placeholder="example@email.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="status">الصفة</label>
-              <select id="status" required>
-                <option value="">اختر الصفة</option>
-                <option>طالب إجازة</option>
-                <option>طالب ماستر</option>
-                <option>طالب دكتوراه</option>
-                <option>باحث</option>
-                <option>أستاذ</option>
-                <option>ممارس مهني</option>
-                <option>أخرى</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="category">نوع المساهمة</label>
-              <select id="category" required>
-                <option value="">اختر النوع</option>
-                <option>شذرة من الواقع</option>
-                <option>شذرة تحليلية</option>
-                <option>المجتمع والقانون</option>
-                <option>ملاحظة ميدانية</option>
-                <option>قراءة في مفهوم أو ظاهرة</option>
-                <option>ورقة قصيرة</option>
-              </select>
-            </div>
-
-            <div class="form-group full">
-              <label for="title">عنوان المساهمة</label>
-              <input id="title" type="text" placeholder="عنوان واضح ومحدد" required>
-            </div>
-
-            <div class="form-group full">
-              <label for="content">نص المساهمة</label>
-              <textarea id="content" placeholder="ألصق نص المساهمة هنا..." required></textarea>
-            </div>
-
-            <div class="form-group full">
-              <label for="references">المراجع والمصادر</label>
-              <textarea id="references" placeholder="أدرج المراجع والمصادر المستخدمة إن وجدت"></textarea>
-            </div>
-
-          </div>
-
-          <div class="form-group">
-            <label>
-              <input type="checkbox" required style="width:auto;margin-left:8px;">
-              أقر بأن المساهمة أصلية وأنني اطلعت على شروط النشر وأتحمل مسؤولية مضمونها.
-            </label>
-          </div>
-
-          <button type="submit" class="form-button">
-            إرسال المساهمة
-          </button>
-
-        </form>
-
+          <p style="margin-top:10px;">
+            للاستفسار:
+            <a href="mailto:shatharat.platform@gmail.com"
+               style="color:#5f1d2d;font-weight:700;">
+              shatharat.platform@gmail.com
+            </a>
+          </p>
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -2293,16 +2172,6 @@ header {
     link.addEventListener("click", function() {
       navLinks.classList.remove("active");
     });
-  });
-
-  const submissionForm = document.getElementById("submissionForm");
-
-  submissionForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    alert(
-      "تم التحقق من الاستمارة بنجاح. هذه نسخة تجريبية، ويجب ربط النموذج لاحقًا بخدمة إرسال فعلية."
-    );
   });
 </script>
 
