@@ -1447,6 +1447,42 @@ header {
       }
     }
 
+
+    /* =========================================
+       EDUCATION SHADHARA CARD
+       ========================================= */
+
+    .education-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 25px;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at 78% 20%, rgba(230,199,159,0.30), transparent 31%),
+        radial-gradient(circle at 18% 82%, rgba(255,255,255,0.08), transparent 30%),
+        linear-gradient(135deg, #243b32 0%, #355f4c 55%, #547562 100%);
+    }
+
+    .education-visual-kicker {
+      font-size: 0.88rem;
+      opacity: 0.86;
+      margin-bottom: 4px;
+    }
+
+    .education-visual strong {
+      font-size: 1.58rem;
+      line-height: 1.45;
+    }
+
+    .education-visual-date {
+      font-size: 0.82rem;
+      margin-top: 8px;
+      color: #f0ddbf;
+    }
+
   </style>
 </head>
 
@@ -1687,8 +1723,55 @@ header {
       </div>
 
       <div class="articles-grid">
-        <!-- الأحدث: الانتخابات التشريعية والحياة اليومية -->
+        <!-- الأحدث: الدخول المدرسي وتفاوت الفرص -->
         <article class="article-card latest-article">
+
+          <div
+            class="article-image education-visual"
+            role="img"
+            aria-label="الدخول المدرسي وتفاوت الفرص في المغرب"
+          >
+            <span class="education-visual-kicker">سوسيولوجيا التربية</span>
+            <strong>الدخول المدرسي 2026</strong>
+            <span class="education-visual-date">21 شتنبر 2026</span>
+          </div>
+
+          <div class="article-body">
+
+            <div class="article-heading-row">
+              <span class="article-tag">شذرة من الواقع</span>
+              <span class="latest-badge">الأحدث</span>
+            </div>
+
+            <h3>
+              قبل ان يبدأ الدرس:
+              ماذا يكشف الدخول المدرسي عن تفاوت الفرص؟
+            </h3>
+
+            <p>
+              قراءة سوسيولوجية في الدخول المدرسي بوصفه تجربة
+              لا تبدأ داخل القسم فقط، بل تتشكل ايضا من ظروف الاسرة
+              والموارد اليومية والدعم والمسافة عن المؤسسة التعليمية.
+            </p>
+
+            <a
+              class="read-more"
+              href="articles/school-entry-inequality-morocco-2026.html"
+            >
+              اقرأ الشذرة كاملة ←
+            </a>
+
+            <div class="article-meta">
+              <span>هيئة تحرير شذرات</span>
+              <span>21 شتنبر 2026</span>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- الانتخابات التشريعية والحياة اليومية -->
+        <article class="article-card">
 
           <div
             class="article-image election-visual"
@@ -1702,10 +1785,7 @@ header {
 
           <div class="article-body">
 
-            <div class="article-heading-row">
-              <span class="article-tag">شذرة من الواقع</span>
-              <span class="latest-badge">الأحدث</span>
-            </div>
+            <span class="article-tag">شذرة من الواقع</span>
 
             <h3>
               حين تدخل الانتخابات الى تفاصيل اليومي:
