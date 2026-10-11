@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="google-site-verification"
+    <meta name="google-site-verification">
 
     <meta name="description"
           content="شذرات، منصة أكاديمية مستقلة في العلوم الاجتماعية والإنسانية والقانون، تنشر مقالات وتحليلات ودراسات معرفية.">
@@ -13,113 +13,123 @@
     <link rel="canonical" href="https://socialhumanities.github.io/">
 
     <title>شذرات | منصة للعلوم الاجتماعية والإنسانية والقانونية</title>
+
     <!-- Structured Data for Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "شذرات",
-  "alternateName": "منصة العلوم الاجتماعية والإنسانية والقانونية",
-  "url": "https://socialhumanities.github.io/",
-  "description": "منصة أكاديمية مستقلة في العلوم الاجتماعية والإنسانية والقانونية، تنشر مقالات وشذرات ودراسات معرفية باللغة العربية.",
-  "inLanguage": "ar"
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "شذرات",
+      "alternateName": "منصة العلوم الاجتماعية والإنسانية والقانونية",
+      "url": "https://socialhumanities.github.io/",
+      "description": "منصة أكاديمية مستقلة في العلوم الاجتماعية والإنسانية والقانونية، تنشر مقالات وشذرات ودراسات معرفية باللغة العربية.",
+      "inLanguage": "ar"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+
+<style>
+
+:root {
+    --primary: #5f1d2d;
+    --primary-dark: #42121e;
+    --secondary: #9c6b3d;
+    --background: #f8f6f2;
+    --surface: #ffffff;
+    --text: #252525;
+    --muted: #6e6e6e;
+    --border: #e3ddd5;
+    --soft: #f0ebe4;
+    --success: #2f6b4f;
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    --radius: 18px;
+    --max-width: 1200px;
 }
-</script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #5f1d2d;
-      --primary-dark: #42121e;
-      --secondary: #9c6b3d;
-      --background: #f8f6f2;
-      --surface: #ffffff;
-      --text: #252525;
-      --muted: #6e6e6e;
-      --border: #e3ddd5;
-      --soft: #f0ebe4;
-      --success: #2f6b4f;
-      --shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-      --radius: 18px;
-      --max-width: 1200px;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+body {
+    font-family: "Cairo", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.9;
+}
 
-    body {
-      font-family: "Cairo", sans-serif;
-      background: var(--background);
-      color: var(--text);
-      line-height: 1.9;
-    }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+img {
+    max-width: 100%;
+    display: block;
+}
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
+.container {
+    width: min(92%, var(--max-width));
+    margin: auto;
+}
 
-    .container {
-      width: min(92%, var(--max-width));
-      margin: auto;
-    }
+.section {
+    padding: 85px 0;
+}
 
-    .section {
-      padding: 85px 0;
-    }
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
-    }
+.section-title span {
+    display: inline-block;
+    color: var(--secondary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
 
-    .section-title span {
-      display: inline-block;
-      color: var(--secondary);
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
+.section-title h2 {
+    color: var(--primary-dark);
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
 
-    .section-title h2 {
-      color: var(--primary-dark);
-      font-size: 2rem;
-      line-height: 1.4;
-      margin-bottom: 12px;
-    }
+.section-title p {
+    max-width: 760px;
+    margin: auto;
+    color: var(--muted);
+}
 
-    .section-title p {
-      max-width: 760px;
-      margin: auto;
-      color: var(--muted);
-    }
 
-    /* HEADER */
+/* =========================================
+   HEADER
+   ========================================= */
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,0.97);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-    }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+}
 
-   .navbar {
+.navbar {
     min-height: 105px;
     display: flex;
     align-items: center;
@@ -128,13 +138,14 @@
     padding: 10px 0;
 }
 
- .brand {
+.brand {
     display: flex;
     align-items: center;
     gap: 14px;
     flex-shrink: 0;
     text-decoration: none;
 }
+
 .site-logo {
     width: 78px;
     height: 78px;
@@ -143,13 +154,17 @@
     border-radius: 14px;
     filter: drop-shadow(0 6px 12px rgba(95,29,45,0.15));
 }
+
 @media (max-width: 768px) {
+
     .site-logo {
         width: 42px;
         height: 42px;
     }
+
 }
-    .brand-text h1 {
+
+.brand-text h1 {
     margin: 0;
     color: #4b1323;
     font-size: 1.9rem;
@@ -157,7 +172,7 @@
     line-height: 1.1;
 }
 
-   .brand-text small {
+.brand-text small {
     display: block;
     margin-top: 6px;
     color: #6b5057;
@@ -166,6 +181,7 @@
     line-height: 1.5;
     white-space: nowrap;
 }
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -177,6 +193,7 @@
     flex-wrap: nowrap;
     white-space: nowrap;
 }
+
 .nav-links a {
     position: relative;
     display: inline-flex;
@@ -211,393 +228,428 @@
     transform: translateY(-3px);
     box-shadow: 0 11px 24px rgba(95,29,45,0.28);
 }
-    .menu-button {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.8rem;
-      color: var(--primary);
-      cursor: pointer;
-    }
 
-    /* HERO */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--primary);
+    cursor: pointer;
+}
 
-    .hero {
-      background:
-        linear-gradient(rgba(58, 15, 27, 0.86), rgba(58, 15, 27, 0.88)),
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(58, 15, 27, 0.86),
+            rgba(58, 15, 27, 0.88)
+        ),
         url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80")
         center/cover no-repeat;
-      color: white;
-      padding: 120px 0 110px;
-    }
 
-    .hero-content {
-      max-width: 870px;
-    }
+    color: white;
 
-    .hero-badge {
-      display: inline-block;
-      padding: 7px 14px;
-      border: 1px solid rgba(255,255,255,0.35);
-      border-radius: 999px;
-      margin-bottom: 22px;
-      font-size: 0.87rem;
-      background: rgba(255,255,255,0.08);
-    }
+    padding: 120px 0 110px;
+}
 
-    .hero h2 {
-      font-size: clamp(2.2rem, 5vw, 4.3rem);
-      line-height: 1.3;
-      margin-bottom: 15px;
-    }
+.hero-content {
+    max-width: 870px;
+}
 
-    .hero h2 span {
-      color: #e6c79f;
-    }
+.hero-badge {
+    display: inline-block;
+    padding: 7px 14px;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 999px;
+    margin-bottom: 22px;
+    font-size: 0.87rem;
+    background: rgba(255,255,255,0.08);
+}
 
-    .hero p {
-      max-width: 760px;
-      font-size: 1.08rem;
-      color: rgba(255,255,255,0.88);
-      margin-bottom: 30px;
-    }
+.hero h2 {
+    font-size: clamp(2.2rem, 5vw, 4.3rem);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
+.hero h2 span {
+    color: #e6c79f;
+}
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 22px;
-      border-radius: 10px;
-      font-weight: 700;
-      transition: 0.2s;
-    }
+.hero p {
+    max-width: 760px;
+    font-size: 1.08rem;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 30px;
+}
 
-    .btn-primary {
-      background: white;
-      color: var(--primary);
-    }
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
 
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,0.55);
-      color: white;
-    }
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.2s;
+}
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
+.btn-primary {
+    background: white;
+    color: var(--primary);
+}
 
-    /* INTRO */
+.btn-outline {
+    border: 1px solid rgba(255,255,255,0.55);
+    color: white;
+}
 
-    .intro-box {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
+.btn:hover {
+    transform: translateY(-2px);
+}
 
-    .intro-text {
-      padding: 48px;
-    }
 
-    .intro-text h2 {
-      color: var(--primary);
-      margin-bottom: 16px;
-      font-size: 1.8rem;
-    }
+/* =========================================
+   INTRO
+   ========================================= */
 
-    .intro-text p {
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
+.intro-box {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
 
-    .intro-highlight {
-      border-right: 4px solid var(--primary);
-      padding: 14px 18px;
-      background: var(--soft);
-      margin-top: 25px;
-      color: var(--primary-dark);
-      font-weight: 600;
-    }
+.intro-text {
+    padding: 48px;
+}
 
-    .intro-image {
-      min-height: 420px;
-      background:
-        linear-gradient(rgba(95,29,45,0.2), rgba(95,29,45,0.2)),
+.intro-text h2 {
+    color: var(--primary);
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+.intro-text p {
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+.intro-highlight {
+    border-right: 4px solid var(--primary);
+    padding: 14px 18px;
+    background: var(--soft);
+    margin-top: 25px;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.intro-image {
+    min-height: 420px;
+
+    background:
+        linear-gradient(
+            rgba(95,29,45,0.2),
+            rgba(95,29,45,0.2)
+        ),
         url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80")
         center/cover no-repeat;
-    }
+}
 
-    /* CATEGORIES */
 
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
+/* =========================================
+   CATEGORIES
+   ========================================= */
 
-    .category-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      padding: 28px;
-      border-radius: var(--radius);
-      transition: 0.25s;
-    }
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
-    .category-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow);
-      border-color: #cebfae;
-    }
+.category-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 28px;
+    border-radius: var(--radius);
+    transition: 0.25s;
+}
 
-    .category-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      background: var(--soft);
-      color: var(--primary);
-      font-size: 1.3rem;
-      margin-bottom: 16px;
-    }
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: #cebfae;
+}
 
-    .category-card h3 {
-      color: var(--primary-dark);
-      margin-bottom: 8px;
-    }
+.category-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: var(--soft);
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
 
-    .category-card p {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
+.category-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 8px;
+}
 
-    /* ARTICLES */
+.category-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
 
-    .articles-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
 
-    .article-card {
-      background: var(--surface);
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid var(--border);
-      transition: 0.25s;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
+/* =========================================
+   ARTICLES
+   ========================================= */
 
-    .article-card:hover {
-      box-shadow: var(--shadow);
-      transform: translateY(-4px);
-    }
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
 
-    .article-image {
-      height: 220px;
-      object-fit: cover;
-      width: 100%;
-    }
+.article-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
-    .article-body {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
+.article-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-4px);
+}
 
-    .article-tag {
-      display: inline-block;
-      font-size: 0.77rem;
-      color: var(--primary);
-      background: var(--soft);
-      padding: 5px 10px;
-      border-radius: 999px;
-      margin-bottom: 13px;
-      font-weight: 700;
-    }
+.article-image {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
 
-    .article-body h3 {
-      font-size: 1.17rem;
-      color: var(--primary-dark);
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
+.article-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
-    .article-body p {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 15px;
-    }
+.article-tag {
+    display: inline-block;
+    font-size: 0.77rem;
+    color: var(--primary);
+    background: var(--soft);
+    padding: 5px 10px;
+    border-radius: 999px;
+    margin-bottom: 13px;
+    font-weight: 700;
+}
 
-    .read-more {
-      display: inline-block;
-      margin-top: auto;
-      margin-bottom: 16px;
-      color: var(--primary);
-      font-weight: 800;
-      font-size: 0.9rem;
-    }
+.article-body h3 {
+    font-size: 1.17rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
 
-    .read-more:hover {
-      color: var(--secondary);
-    }
+.article-body p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
 
-    .article-meta {
-      margin-top: auto;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
-      color: #858585;
-      font-size: 0.78rem;
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-    }
+.read-more {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 16px;
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 0.9rem;
+}
 
-    /* METHODOLOGY */
+.read-more:hover {
+    color: var(--secondary);
+}
 
-    .method-section {
-      background: var(--primary-dark);
-      color: white;
-    }
+.article-meta {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    color: #858585;
+    font-size: 0.78rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
-    .method-section .section-title h2 {
-      color: white;
-    }
 
-    .method-section .section-title p {
-      color: rgba(255,255,255,0.72);
-    }
+/* =========================================
+   METHODOLOGY
+   ========================================= */
 
-    .method-steps {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 18px;
-    }
+.method-section {
+    background: var(--primary-dark);
+    color: white;
+}
 
-    .method-card {
-      border: 1px solid rgba(255,255,255,0.16);
-      padding: 25px 20px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.06);
-    }
+.method-section .section-title h2 {
+    color: white;
+}
 
-    .method-number {
-      font-size: 2.2rem;
-      font-weight: 800;
-      color: #d7b38b;
-      line-height: 1;
-      margin-bottom: 13px;
-    }
+.method-section .section-title p {
+    color: rgba(255,255,255,0.72);
+}
 
-    .method-card h3 {
-      margin-bottom: 7px;
-    }
+.method-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
 
-    .method-card p {
-      color: rgba(255,255,255,0.72);
-      font-size: 0.86rem;
-    }
+.method-card {
+    border: 1px solid rgba(255,255,255,0.16);
+    padding: 25px 20px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.06);
+}
 
-    /* PUBLISHING TYPES */
+.method-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #d7b38b;
+    line-height: 1;
+    margin-bottom: 13px;
+}
 
-    .publication-table-wrapper {
-      overflow-x: auto;
-      background: white;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-    }
+.method-card h3 {
+    margin-bottom: 7px;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 750px;
-    }
+.method-card p {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.86rem;
+}
 
-    th, td {
-      padding: 16px 18px;
-      text-align: right;
-      border-bottom: 1px solid var(--border);
-    }
 
-    th {
-      background: var(--primary);
-      color: white;
-      font-size: 0.92rem;
-    }
+/* =========================================
+   PUBLISHING TYPES
+   ========================================= */
 
-    td {
-      font-size: 0.9rem;
-    }
+.publication-table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
 
-    tr:last-child td {
-      border-bottom: none;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
 
-    /* CONDITIONS */
+th,
+td {
+    padding: 16px 18px;
+    text-align: right;
+    border-bottom: 1px solid var(--border);
+}
 
-    .conditions-layout {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 32px;
-      align-items: start;
-    }
+th {
+    background: var(--primary);
+    color: white;
+    font-size: 0.92rem;
+}
 
-    .conditions-side {
-      background: var(--primary);
-      color: white;
-      border-radius: var(--radius);
-      padding: 35px;
-      position: sticky;
-      top: 100px;
-    }
+td {
+    font-size: 0.9rem;
+}
 
-    .conditions-side h3 {
-      font-size: 1.55rem;
-      margin-bottom: 12px;
-    }
+tr:last-child td {
+    border-bottom: none;
+}
 
-    .conditions-side p {
-      color: rgba(255,255,255,0.82);
-    }
 
-    .conditions-list {
-      display: grid;
-      gap: 14px;
-    }
+/* =========================================
+   CONDITIONS
+   ========================================= */
 
-    .condition {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-    }
+.conditions-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 32px;
+    align-items: start;
+}
 
-    .condition h4 {
-      color: var(--primary);
-      margin-bottom: 7px;
-    }
+.conditions-side {
+    background: var(--primary);
+    color: white;
+    border-radius: var(--radius);
+    padding: 35px;
+    position: sticky;
+    top: 100px;
+}
 
-    .condition p {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
+.conditions-side h3 {
+    font-size: 1.55rem;
+    margin-bottom: 12px;
+}
 
-    /* TEAM */
+.conditions-side p {
+    color: rgba(255,255,255,0.82);
+}
 
-   .team-grid {
+.conditions-list {
+    display: grid;
+    gap: 14px;
+}
+
+.condition {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.condition h4 {
+    color: var(--primary);
+    margin-bottom: 7px;
+}
+
+.condition p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   TEAM
+   ========================================= */
+
+.team-grid {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -607,224 +659,239 @@
     margin: 35px auto 0;
 }
 
-    .team-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 30px;
-      text-align: center;
-    }
+.team-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 30px;
+    text-align: center;
+}
 
-    .team-avatar {
-      width: 85px;
-      height: 85px;
-      border-radius: 50%;
-      background: var(--soft);
-      display: grid;
-      place-items: center;
-      margin: 0 auto 15px;
-      color: var(--primary);
-      font-size: 1.6rem;
-      font-weight: 800;
-    }
+.team-avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: var(--soft);
+    display: grid;
+    place-items: center;
+    margin: 0 auto 15px;
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: 800;
+}
 
-    .team-card h3 {
-      color: var(--primary-dark);
-    }
+.team-card h3 {
+    color: var(--primary-dark);
+}
 
-    .team-card p {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
+.team-card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
 
-    /* SUBMIT */
 
-    .submit-section {
-      background: var(--soft);
-    }
+/* =========================================
+   SUBMIT
+   ========================================= */
 
-    .submit-box {
-      background: white;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      padding: 45px;
-      max-width: 850px;
-      margin: auto;
-    }
+.submit-section {
+    background: var(--soft);
+}
 
-    .submit-box h2 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
+.submit-box {
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 45px;
+    max-width: 850px;
+    margin: auto;
+}
 
-    .submit-box > p {
-      color: var(--muted);
-      margin-bottom: 25px;
-    }
+.submit-box h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
 
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
+.submit-box > p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
 
-    .form-group {
-      margin-bottom: 18px;
-    }
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
 
-    .form-group.full {
-      grid-column: 1 / -1;
-    }
+.form-group {
+    margin-bottom: 18px;
+}
 
-    label {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 7px;
-      color: var(--primary-dark);
-      font-size: 0.9rem;
-    }
+.form-group.full {
+    grid-column: 1 / -1;
+}
 
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 13px 14px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: #fff;
-      font-family: inherit;
-      font-size: 0.92rem;
-      outline: none;
-    }
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+}
 
-    textarea {
-      resize: vertical;
-      min-height: 180px;
-    }
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 0.92rem;
+    outline: none;
+}
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-      border-color: var(--primary);
-    }
+textarea {
+    resize: vertical;
+    min-height: 180px;
+}
 
-    .notice {
-      padding: 14px 16px;
-      border-radius: 10px;
-      background: #f7f0e7;
-      color: #6b4d2f;
-      font-size: 0.87rem;
-      margin-bottom: 20px;
-    }
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary);
+}
 
-    .form-button {
-      border: 0;
-      background: var(--primary);
-      color: white;
-      padding: 13px 25px;
-      border-radius: 10px;
-      font-family: inherit;
-      font-weight: 700;
-      cursor: pointer;
-    }
+.notice {
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #f7f0e7;
+    color: #6b4d2f;
+    font-size: 0.87rem;
+    margin-bottom: 20px;
+}
 
-    /* ABOUT */
+.form-button {
+    border: 0;
+    background: var(--primary);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
 
-    .about-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px;
-    }
+/* =========================================
+   ABOUT
+   ========================================= */
 
-    .about-card h3 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
 
-    .about-card p {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
+.about-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+}
 
-    /* FOOTER */
+.about-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
 
-    footer {
-      background: #241116;
-      color: white;
-      padding: 55px 0 20px;
-    }
+.about-card p {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
 
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
-    }
 
-    footer h3 {
-      margin-bottom: 13px;
-    }
+/* =========================================
+   FOOTER
+   ========================================= */
 
-    footer p,
-    footer li,
-    footer a {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.88rem;
-    }
+footer {
+    background: #241116;
+    color: white;
+    padding: 55px 0 20px;
+}
 
-    footer ul {
-      list-style: none;
-    }
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
 
-    footer li {
-      margin-bottom: 8px;
-    }
+footer h3 {
+    margin-bottom: 13px;
+}
 
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.12);
-      padding-top: 18px;
-      text-align: center;
-      color: rgba(255,255,255,0.55);
-      font-size: 0.8rem;
-    }
+footer p,
+footer li,
+footer a {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.88rem;
+}
 
-    /* MOBILE */
+footer ul {
+    list-style: none;
+}
 
-    @media (max-width: 1000px) {
-      .categories {
+footer li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 18px;
+    text-align: center;
+    color: rgba(255,255,255,0.55);
+    font-size: 0.8rem;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .categories {
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
 
-      .articles-grid {
+    .articles-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
 
-      .method-steps {
+    .method-steps {
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
 
-      .conditions-layout {
+    .conditions-layout {
         grid-template-columns: 1fr;
-      }
-
-      .conditions-side {
-        position: static;
-      }
     }
 
-    @media (max-width: 820px) {
-      .menu-button {
-        display: block;
-      }
+    .conditions-side {
+        position: static;
+    }
 
-      .nav-links {
+}
+
+@media (max-width: 820px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
         display: none;
         position: absolute;
         top: 76px;
@@ -835,84 +902,87 @@
         align-items: stretch;
         padding: 20px 5%;
         border-bottom: 1px solid var(--border);
-      }
+    }
 
-      .nav-links.active {
+    .nav-links.active {
         display: flex;
-      }
+    }
 
-      .nav-links li {
+    .nav-links li {
         padding: 7px 0;
-      }
+    }
 
-      .submit-btn {
+    .submit-btn {
         display: block;
         text-align: center;
-      }
+    }
 
-      .intro-box {
+    .intro-box {
         grid-template-columns: 1fr;
-      }
+    }
 
-      .intro-image {
+    .intro-image {
         min-height: 300px;
-      }
-
-      .team-grid,
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
-    @media (max-width: 650px) {
-      .section {
+    .team-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .section {
         padding: 60px 0;
-      }
-
-      .hero {
-        padding: 85px 0;
-      }
-
-      .hero h2 {
-        font-size: 2.3rem;
-      }
-
-      .categories,
-      .articles-grid,
-      .method-steps,
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .intro-text,
-      .submit-box {
-        padding: 28px 22px;
-      }
-
-      .article-meta {
-        flex-direction: column;
-      }
-
-      .brand-text small {
-        display: none;
-      }
     }
-      /* =========================================
+
+    .hero {
+        padding: 85px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.3rem;
+    }
+
+    .categories,
+    .articles-grid,
+    .method-steps,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-text,
+    .submit-box {
+        padding: 28px 22px;
+    }
+
+    .article-meta {
+        flex-direction: column;
+    }
+
+    .brand-text small {
+        display: none;
+    }
+
+}
+
+
+/* =========================================
    SHADHARAT - PREMIUM HEADER
    ========================================= */
 
-/* الهيدر */
 header {
     background: rgba(255, 255, 255, 0.97);
     border-bottom: 1px solid rgba(95, 29, 45, 0.12);
     box-shadow: 0 8px 30px rgba(40, 20, 25, 0.07);
 }
 
-/* الحاوية الرئيسية */
 header .navbar {
     width: min(96%, 1500px);
     margin: 0 auto;
@@ -924,12 +994,9 @@ header .navbar {
     justify-content: center;
 
     gap: 12px;
+
     padding: 15px 10px 12px;
 }
-
-/* =========================
-   الهوية + اللوغو
-   ========================= */
 
 header .brand {
     display: flex;
@@ -938,55 +1005,64 @@ header .brand {
     justify-content: flex-start;
 
     gap: 15px;
+
     width: 100%;
+
     text-decoration: none;
 }
 
-/* اللوغو */
 header .site-logo {
     width: 70px;
     height: 70px;
+
     object-fit: contain;
+
     flex-shrink: 0;
 }
 
-/* اسم المنصة والوصف */
 header .brand-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     gap: 3px;
 }
 
 header .brand-text h1 {
     margin: 0;
+
     font-size: 1.8rem;
     font-weight: 800;
+
     line-height: 1.2;
+
     color: var(--primary);
 }
 
 header .brand-text small {
     font-size: 1rem;
     font-weight: 600;
+
     color: #5f5960;
+
     line-height: 1.5;
 }
 
-/* =========================
-   شريط التنقل
-   ========================= */
-
 header .nav-links {
     width: 100%;
+
     margin: 0;
+
     padding: 10px 0 0;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 8px;
+
     list-style: none;
 
     border-top: 1px solid rgba(95, 29, 45, 0.10);
@@ -995,61 +1071,71 @@ header .nav-links {
 header .nav-links li {
     margin: 0;
     padding: 0;
+
     flex: 0 0 auto;
 }
 
-/* الأزرار */
 header .nav-links a {
     position: relative;
+
     display: block;
 
     padding: 10px 12px;
 
     font-size: 1.05rem;
+
     font-weight: 700;
+
     line-height: 1.2;
 
     color: #30292c;
+
     text-decoration: none;
+
     white-space: nowrap;
 
     border-radius: 10px;
+
     transition:
         color 0.25s ease,
         background 0.25s ease,
         transform 0.25s ease;
 }
 
-/* الخط الذهبي أسفل الزر */
 header .nav-links a:not(.submit-btn)::after {
     content: "";
+
     position: absolute;
 
     right: 50%;
+
     bottom: 3px;
 
     width: 0;
+
     height: 2px;
 
     background: #b38b46;
+
     border-radius: 20px;
 
     transition: 0.3s ease;
 }
 
-/* عند مرور الفأرة */
 header .nav-links a:not(.submit-btn):hover {
     color: var(--primary);
+
     background: rgba(95, 29, 45, 0.04);
+
     transform: translateY(-2px);
 }
 
 header .nav-links a:not(.submit-btn):hover::after {
     width: 55%;
+
     right: 22.5%;
 }
 
-/* زر أرسل شذرتك */
 header .nav-links .submit-btn {
     padding: 11px 18px;
 
@@ -1075,7 +1161,6 @@ header .nav-links .submit-btn:hover {
         0 9px 22px rgba(95, 29, 45, 0.28);
 }
 
-/* زر الهاتف */
 header .menu-button {
     display: none;
 }
@@ -1096,17 +1181,19 @@ header .menu-button {
         font-size: 1rem;
         padding: 9px 10px;
     }
+
 }
 
 
 /* =========================================
-   MOBILE
+   MOBILE HEADER
    ========================================= */
 
 @media (max-width: 768px) {
 
     header .navbar {
         min-height: auto;
+
         padding: 10px 14px;
     }
 
@@ -1116,6 +1203,7 @@ header .menu-button {
 
     header .site-logo {
         width: 55px;
+
         height: 55px;
     }
 
@@ -1131,13 +1219,17 @@ header .menu-button {
         display: block;
 
         position: absolute;
+
         left: 16px;
+
         top: 22px;
 
         font-size: 1.7rem;
+
         cursor: pointer;
 
         background: transparent;
+
         border: 0;
 
         color: var(--primary);
@@ -1147,14 +1239,17 @@ header .menu-button {
         display: none;
 
         width: 100%;
+
         padding: 12px;
 
         flex-direction: column;
+
         align-items: stretch;
 
         background: #ffffff;
 
         border: 1px solid rgba(95, 29, 45, 0.10);
+
         border-radius: 15px;
 
         box-shadow: 0 15px 35px rgba(0,0,0,0.08);
@@ -1170,21 +1265,30 @@ header .menu-button {
 
     header .nav-links a {
         width: 100%;
+
         text-align: right;
+
         padding: 12px 14px;
     }
 
     header .nav-links .submit-btn {
         text-align: center;
+
         margin-top: 5px;
     }
-}/* =========================
+
+}
+
+
+/* =========================================
    SHATHARAT HEADER BACKGROUND
-   ========================= */
+   ========================================= */
 
 header {
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     background:
@@ -1193,11 +1297,13 @@ header {
             rgba(195, 145, 69, 0.14),
             transparent 32%
         ),
+
         radial-gradient(
             circle at 15% 80%,
             rgba(95, 29, 45, 0.10),
             transparent 35%
         ),
+
         linear-gradient(
             135deg,
             #fffaf3 0%,
@@ -1206,1464 +1312,3917 @@ header {
             #efe5e1 100%
         );
 
-    border-bottom: 1px solid rgba(95, 29, 45, 0.13);
+    border-bottom:
+        1px solid rgba(95, 29, 45, 0.13);
 
     box-shadow:
         0 8px 28px rgba(62, 25, 35, 0.08);
 
-    backdrop-filter: blur(12px);
+    backdrop-filter:
+        blur(12px);
 }
 
 
-    /* =========================================
-       INDEX POLISH — 18 SEPTEMBER 2026
-       ========================================= */
+/* =========================================
+   INDEX POLISH
+   ========================================= */
 
-    body {
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
+body {
+    -webkit-font-smoothing: antialiased;
 
-    section[id] {
-      scroll-margin-top: 150px;
-    }
+    text-rendering: optimizeLegibility;
+}
+
+section[id] {
+    scroll-margin-top: 150px;
+}
+
+header .navbar {
+    min-height: 132px;
+
+    padding-top: 12px;
+
+    padding-bottom: 10px;
+}
+
+header .nav-links {
+    justify-content: center;
+
+    gap: 12px;
+}
+
+header .nav-links a {
+    padding-inline: 14px;
+}
+
+.section-title {
+    max-width: 820px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    margin-bottom: 48px;
+}
+
+.categories {
+    align-items: stretch;
+}
+
+.category-card {
+    height: 100%;
+
+    box-shadow:
+        0 4px 16px rgba(45, 25, 30, 0.03);
+}
+
+.category-card:hover {
+    box-shadow:
+        0 14px 30px rgba(45, 25, 30, 0.08);
+}
+
+.articles-grid {
+    align-items: stretch;
+}
+
+.article-card {
+    position: relative;
+
+    box-shadow:
+        0 5px 18px rgba(45, 25, 30, 0.04);
+
+    border-color:
+        rgba(95, 29, 45, 0.11);
+
+    isolation: isolate;
+}
+
+.article-card:hover {
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(156, 107, 61, 0.32);
+
+    box-shadow:
+        0 16px 34px rgba(45, 25, 30, 0.10);
+}
+
+.article-image {
+    height: 220px;
+
+    object-fit: cover;
+
+    width: 100%;
+}
+
+img.article-image {
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+}
+
+.article-card:hover img.article-image {
+    transform:
+        scale(1.025);
+
+    filter:
+        saturate(1.03);
+}
+
+.article-body {
+    padding: 25px;
+}
+
+.article-body h3 {
+    letter-spacing: -0.01em;
+}
+
+.article-heading-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+}
+
+.article-heading-row .article-tag {
+    margin-bottom: 0;
+}
+
+.latest-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 4px 9px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(156, 107, 61, 0.12);
+
+    color: #805226;
+
+    border:
+        1px solid rgba(156, 107, 61, 0.20);
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.latest-article {
+    border-color:
+        rgba(95, 29, 45, 0.20);
+}
+
+
+/* =========================================
+   ELECTION VISUAL
+   ========================================= */
+
+.election-visual {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 78% 20%,
+            rgba(214, 170, 103, 0.32),
+            transparent 31%
+        ),
+
+        radial-gradient(
+            circle at 18% 82%,
+            rgba(255,255,255,0.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #351019 0%,
+            #5f1d2d 56%,
+            #7b3346 100%
+        );
+}
+
+.election-visual-kicker {
+    font-size: 0.88rem;
+
+    opacity: 0.84;
+
+    margin-bottom: 4px;
+}
+
+.election-visual strong {
+    font-size: 1.62rem;
+
+    line-height: 1.45;
+}
+
+.election-visual-date {
+    font-size: 0.82rem;
+
+    margin-top: 8px;
+
+    color: #ecd0a9;
+}
+
+.read-more {
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.read-more:hover {
+    transform:
+        translateX(-3px);
+}
+
+.article-meta {
+    align-items: center;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline:
+        3px solid rgba(156, 107, 61, 0.45);
+
+    outline-offset:
+        3px;
+}
+
+
+@media (max-width: 1000px) {
 
     header .navbar {
-      min-height: 132px;
-      padding-top: 12px;
-      padding-bottom: 10px;
+        min-height: auto;
     }
 
     header .nav-links {
-      justify-content: center;
-      gap: 12px;
+        gap: 6px;
     }
 
-    header .nav-links a {
-      padding-inline: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    section[id] {
+        scroll-margin-top: 90px;
+    }
+
+    header .brand {
+        padding-left: 50px;
+    }
+
+    header .nav-links {
+        gap: 4px;
+    }
+
+    .hero {
+        padding-top: 78px;
+
+        padding-bottom: 78px;
     }
 
     .section-title {
-      max-width: 820px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 48px;
-    }
-
-    .categories {
-      align-items: stretch;
-    }
-
-    .category-card {
-      height: 100%;
-      box-shadow: 0 4px 16px rgba(45, 25, 30, 0.03);
-    }
-
-    .category-card:hover {
-      box-shadow: 0 14px 30px rgba(45, 25, 30, 0.08);
-    }
-
-    .articles-grid {
-      align-items: stretch;
-    }
-
-    .article-card {
-      position: relative;
-      box-shadow: 0 5px 18px rgba(45, 25, 30, 0.04);
-      border-color: rgba(95, 29, 45, 0.11);
-      isolation: isolate;
-    }
-
-    .article-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(156, 107, 61, 0.32);
-      box-shadow: 0 16px 34px rgba(45, 25, 30, 0.10);
+        margin-bottom: 34px;
     }
 
     .article-image {
-      height: 220px;
-      object-fit: cover;
-      width: 100%;
+        height: 205px;
     }
 
-    img.article-image {
-      transition: transform 0.4s ease, filter 0.4s ease;
-    }
+}
 
-    .article-card:hover img.article-image {
-      transform: scale(1.025);
-      filter: saturate(1.03);
-    }
+
+@media (max-width: 650px) {
 
     .article-body {
-      padding: 25px;
-    }
-
-    .article-body h3 {
-      letter-spacing: -0.01em;
+        padding: 22px;
     }
 
     .article-heading-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 13px;
-    }
-
-    .article-heading-row .article-tag {
-      margin-bottom: 0;
-    }
-
-    .latest-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 4px 9px;
-      border-radius: 999px;
-      background: rgba(156, 107, 61, 0.12);
-      color: #805226;
-      border: 1px solid rgba(156, 107, 61, 0.20);
-      font-size: 0.72rem;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    .latest-article {
-      border-color: rgba(95, 29, 45, 0.20);
-    }
-
-    .election-visual {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      padding: 25px;
-      color: #ffffff;
-      background:
-        radial-gradient(
-          circle at 78% 20%,
-          rgba(214, 170, 103, 0.32),
-          transparent 31%
-        ),
-        radial-gradient(
-          circle at 18% 82%,
-          rgba(255,255,255,0.08),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #351019 0%,
-          #5f1d2d 56%,
-          #7b3346 100%
-        );
-    }
-
-    .election-visual-kicker {
-      font-size: 0.88rem;
-      opacity: 0.84;
-      margin-bottom: 4px;
-    }
-
-    .election-visual strong {
-      font-size: 1.62rem;
-      line-height: 1.45;
-    }
-
-    .election-visual-date {
-      font-size: 0.82rem;
-      margin-top: 8px;
-      color: #ecd0a9;
-    }
-
-    .read-more {
-      transition: color 0.2s ease, transform 0.2s ease;
-    }
-
-    .read-more:hover {
-      transform: translateX(-3px);
+        align-items: flex-start;
     }
 
     .article-meta {
-      align-items: center;
-    }
-
-    a:focus-visible,
-    button:focus-visible {
-      outline: 3px solid rgba(156, 107, 61, 0.45);
-      outline-offset: 3px;
-    }
-
-    @media (max-width: 1000px) {
-      header .navbar {
-        min-height: auto;
-      }
-
-      header .nav-links {
-        gap: 6px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      section[id] {
-        scroll-margin-top: 90px;
-      }
-
-      header .brand {
-        padding-left: 50px;
-      }
-
-      header .nav-links {
-        gap: 4px;
-      }
-
-      .hero {
-        padding-top: 78px;
-        padding-bottom: 78px;
-      }
-
-      .section-title {
-        margin-bottom: 34px;
-      }
-
-      .article-image {
-        height: 205px;
-      }
-    }
-
-    @media (max-width: 650px) {
-      .article-body {
-        padding: 22px;
-      }
-
-      .article-heading-row {
-        align-items: flex-start;
-      }
-
-      .article-meta {
         flex-direction: row;
+
         flex-wrap: wrap;
-      }
     }
 
+}
 
-    /* =========================================
-       EDUCATION SHADHARA CARD
-       ========================================= */
 
-    .education-visual {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      padding: 25px;
-      color: #ffffff;
-      background:
-        radial-gradient(circle at 78% 20%, rgba(230,199,159,0.30), transparent 31%),
-        radial-gradient(circle at 18% 82%, rgba(255,255,255,0.08), transparent 30%),
-        linear-gradient(135deg, #243b32 0%, #355f4c 55%, #547562 100%);
-    }
+/* =========================================
+   EDUCATION SHADHARA CARD
+   ========================================= */
 
-    .education-visual-kicker {
-      font-size: 0.88rem;
-      opacity: 0.86;
-      margin-bottom: 4px;
-    }
+.education-visual {
+    display: flex;
 
-    .education-visual strong {
-      font-size: 1.58rem;
-      line-height: 1.45;
-    }
+    align-items: center;
 
-    .education-visual-date {
-      font-size: 0.82rem;
-      margin-top: 8px;
-      color: #f0ddbf;
-    }
+    justify-content: center;
 
-  </style>
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 78% 20%,
+            rgba(230,199,159,0.30),
+            transparent 31%
+        ),
+
+        radial-gradient(
+            circle at 18% 82%,
+            rgba(255,255,255,0.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #243b32 0%,
+            #355f4c 55%,
+            #547562 100%
+        );
+}
+
+.education-visual-kicker {
+    font-size: 0.88rem;
+
+    opacity: 0.86;
+
+    margin-bottom: 4px;
+}
+
+.education-visual strong {
+    font-size: 1.58rem;
+
+    line-height: 1.45;
+}
+
+.education-visual-date {
+    font-size: 0.82rem;
+
+    margin-top: 8px;
+
+    color: #f0ddbf;
+}
+
+
+/* =========================================
+   AI SHADHARA CARD
+   ========================================= */
+
+.ai-visual {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 78% 20%,
+            rgba(165,205,225,0.28),
+            transparent 31%
+        ),
+
+        radial-gradient(
+            circle at 18% 82%,
+            rgba(255,255,255,0.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #182833 0%,
+            #2d4658 55%,
+            #4e7084 100%
+        );
+}
+
+.ai-visual-kicker {
+    font-size: 0.88rem;
+
+    opacity: 0.86;
+
+    margin-bottom: 4px;
+}
+
+.ai-visual strong {
+    font-size: 1.58rem;
+
+    line-height: 1.45;
+}
+
+.ai-visual-date {
+    font-size: 0.82rem;
+
+    margin-top: 8px;
+
+    color: #d6e6ef;
+}
+
+</style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================================
+     HEADER
+     ========================================= -->
+
 <header>
-  <div class="container navbar">
-  <a href="#home" class="brand">
 
-    <img src="logo.png.png"
-         alt="شعار منصة شذرات"
-         class="site-logo">
+<div class="container navbar">
 
-    <div class="brand-text">
-        <h1>شذرات</h1>
-        <small>منصة للعلوم الاجتماعية والانسانية والقانونية</small>
-    </div>
+
+<a href="#home" class="brand">
+
+<img
+    src="logo.png.png"
+    alt="شعار منصة شذرات"
+    class="site-logo"
+>
+
+<div class="brand-text">
+
+<h1>
+شذرات
+</h1>
+
+<small>
+منصة للعلوم الاجتماعية والانسانية والقانونية
+</small>
+
+</div>
 
 </a>
-    <button class="menu-button" id="menuButton" aria-label="فتح القائمة">
-      ☰
-    </button>
 
-  <ul class="nav-links" id="navLinks">
 
-  <li>
-    <a href="#home">الرئيسية</a>
-  </li>
+<button
+    class="menu-button"
+    id="menuButton"
+    aria-label="فتح القائمة"
+>
+☰
+</button>
 
-  <li>
-    <a href="about.html">عن المنصة</a>
-  </li>
 
-  <li>
-    <a href="#categories">الأقسام</a>
-  </li>
+<ul
+    class="nav-links"
+    id="navLinks"
+>
 
-  <li>
-    <a href="#latest">الشذرات</a>
-  </li>
 
-  <li>
-    <a href="#method">منهجية الشذرة</a>
-  </li>
+<li>
+<a href="#home">
+الرئيسية
+</a>
+</li>
 
-  <li>
-    <a href="#conditions">شروط النشر</a>
-  </li>
 
-  <li>
-    <a href="#team">هيئة التحرير</a>
-  </li>
+<li>
+<a href="about.html">
+عن المنصة
+</a>
+</li>
 
-  <li>
-    <a href="#submit" class="submit-btn">أرسل شذرتك</a>
-  </li>
+
+<li>
+<a href="#categories">
+الأقسام
+</a>
+</li>
+
+
+<li>
+<a href="#latest">
+الشذرات
+</a>
+</li>
+
+
+<li>
+<a href="#method">
+منهجية الشذرة
+</a>
+</li>
+
+
+<li>
+<a href="#conditions">
+شروط النشر
+</a>
+</li>
+
+
+<li>
+<a href="#team">
+هيئة التحرير
+</a>
+</li>
+
+
+<li>
+<a
+    href="#submit"
+    class="submit-btn"
+>
+أرسل شذرتك
+</a>
+</li>
+
 
 </ul>
-  </div>
+
+
+</div>
+
 </header>
+
+
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          منصة رقمية معرفية مستقلة
-        </div>
 
-        <h2>
-          من تفاصيل اليومي<br>
-          إلى <span>أسئلة المعرفة</span>
-        </h2>
+<!-- =========================================
+     HERO
+     ========================================= -->
 
-        <p>
-          «شذرات» فضاء رقمي يهتم برصد تفاصيل الواقع الاجتماعي وتحويلها إلى
-          ملاحظات وأسئلة وقراءات في العلوم الاجتماعية والإنسانية والقانونية،
-          من خلال مساهمات تجمع بين الملاحظة، والتحليل، والانضباط العلمي.
-        </p>
+<section
+    class="hero"
+    id="home"
+>
 
-        <div class="hero-actions">
-          <a href="#latest" class="btn btn-primary">استكشف الشذرات</a>
-          <a href="#submit" class="btn btn-outline">أرسل مساهمتك</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="container">
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="intro-box">
-        <div class="intro-text">
-          <span style="color:var(--secondary);font-weight:700;">عن المنصة</span>
-          <h2>لماذا «شذرات»؟</h2>
+<div class="hero-content">
 
-          <p>
-            كثير من الأسئلة العلمية الكبرى تبدأ من ملاحظة صغيرة:
-            سلوك داخل فضاء عام، تغير في علاقة اجتماعية، ممارسة إدارية،
-            تناقض قانوني، تحول في المدينة، أو تفصيل عابر من الحياة اليومية.
-          </p>
 
-          <p>
-            تنطلق «شذرات» من هذه التفاصيل، وتعمل على تحويلها من مجرد
-            انطباعات عابرة إلى مادة قابلة للفهم والتحليل والنقاش العلمي.
-          </p>
+<div class="hero-badge">
+منصة رقمية معرفية مستقلة
+</div>
 
-          <div class="intro-highlight">
-            الملاحظة ليست نهاية التفكير، بل بدايته.
-          </div>
-        </div>
 
-        <div class="intro-image"></div>
-      </div>
-    </div>
-  </section>
+<h2>
 
-  <!-- CATEGORIES -->
-  <section class="section" id="categories">
-    <div class="container">
+من تفاصيل اليومي
 
-      <div class="section-title">
-        <span>مجالات النشر</span>
-        <h2>ماذا تنشر المنصة؟</h2>
-        <p>
-          تستقبل المنصة مساهمات متعددة التخصصات تربط بين الواقع الاجتماعي
-          والتحليل السوسيولوجي والإنساني والقانوني.
-        </p>
-      </div>
+<br>
 
-      <div class="categories">
+إلى
 
-      <a href="categories/social-notes.html"
-   class="category-card"
-   style="text-decoration:none;color:inherit;display:block;">
+<span>
+أسئلة المعرفة
+</span>
 
-    <div class="category-icon">◉</div>
+</h2>
 
-    <h3>شذرات اجتماعية</h3>
 
-    <p>
-        ملاحظات من الحياة اليومية والممارسات الاجتماعية والعلاقات والتحولات
-    </p>
+<p>
+
+«شذرات» فضاء رقمي يهتم برصد تفاصيل الواقع الاجتماعي وتحويلها إلى
+ملاحظات وأسئلة وقراءات في العلوم الاجتماعية والإنسانية والقانونية،
+من خلال مساهمات تجمع بين الملاحظة، والتحليل، والانضباط العلمي.
+
+</p>
+
+
+<div class="hero-actions">
+
+
+<a
+    href="#latest"
+    class="btn btn-primary"
+>
+استكشف الشذرات
+</a>
+
+
+<a
+    href="#submit"
+    class="btn btn-outline"
+>
+أرسل مساهمتك
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+     ========================================= -->
+
+<section
+    class="section"
+    id="about"
+>
+
+<div class="container">
+
+<div class="intro-box">
+
+
+<div class="intro-text">
+
+
+<span
+    style="
+        color:var(--secondary);
+        font-weight:700;
+    "
+>
+
+عن المنصة
+
+</span>
+
+
+<h2>
+لماذا «شذرات»؟
+</h2>
+
+
+<p>
+
+كثير من الأسئلة العلمية الكبرى تبدأ من ملاحظة صغيرة:
+
+سلوك داخل فضاء عام،
+
+تغير في علاقة اجتماعية،
+
+ممارسة إدارية،
+
+تناقض قانوني،
+
+تحول في المدينة،
+
+أو تفصيل عابر من الحياة اليومية.
+
+</p>
+
+
+<p>
+
+تنطلق «شذرات» من هذه التفاصيل،
+
+وتعمل على تحويلها من مجرد
+
+انطباعات عابرة
+
+إلى مادة قابلة للفهم
+
+والتحليل
+
+والنقاش العلمي.
+
+</p>
+
+
+<div class="intro-highlight">
+
+الملاحظة ليست نهاية التفكير،
+
+بل بدايته.
+
+</div>
+
+
+</div>
+
+
+<div class="intro-image">
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     CATEGORIES
+     ========================================= -->
+
+<section
+    class="section"
+    id="categories"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span>
+مجالات النشر
+</span>
+
+
+<h2>
+ماذا تنشر المنصة؟
+</h2>
+
+
+<p>
+
+تستقبل المنصة مساهمات متعددة التخصصات
+
+تربط بين الواقع الاجتماعي
+
+والتحليل السوسيولوجي
+
+والإنساني
+
+والقانوني.
+
+</p>
+
+
+</div>
+
+
+
+<div class="categories">
+
+
+<a
+    href="categories/social-notes.html"
+    class="category-card"
+    style="
+        text-decoration:none;
+        color:inherit;
+        display:block;
+    "
+>
+
+
+<div class="category-icon">
+◉
+</div>
+
+
+<h3>
+شذرات اجتماعية
+</h3>
+
+
+<p>
+
+ملاحظات من الحياة اليومية
+
+والممارسات الاجتماعية
+
+والعلاقات
+
+والتحولات
+
+</p>
+
 
 </a>
 
-       <a href="categories/law-society.html"
-   class="category-card"
-   style="text-decoration:none;color:inherit;display:block;">
 
-    <div class="category-icon">⚖</div>
 
-    <h3>القانون والمجتمع</h3>
+<a
+    href="categories/law-society.html"
+    class="category-card"
+    style="
+        text-decoration:none;
+        color:inherit;
+        display:block;
+    "
+>
 
-    <p>
-        قراءات في العلاقة بين القانون والممارسات الاجتماعية والعدالة والمؤسسات
-    </p>
 
-</a>
+<div class="category-icon">
+⚖
+</div>
 
-        <a href="categories/field-notes.html"
-   class="category-card"
-   style="text-decoration:none;color:inherit;display:block;">
 
-    <div class="category-icon">✦</div>
+<h3>
+القانون والمجتمع
+</h3>
 
-    <h3>ملاحظات ميدانية</h3>
 
-    <p>
-        مشاهد ووقائع من الميدان يتم وصفها وتحليلها وفق منظور علمي
-    </p>
+<p>
 
-</a>
+قراءات في العلاقة بين القانون
 
-       <a href="categories/social-transformations.html"
-   class="category-card"
-   style="text-decoration:none;color:inherit;display:block;">
+والممارسات الاجتماعية
 
-    <div class="category-icon">◎</div>
+والعدالة
 
-    <h3>تحولات اجتماعية</h3>
+والمؤسسات
 
-    <p>
-        الأسرة، الشباب، العمل، الهجرة، التكنولوجيا، التعليم والمدينة
-    </p>
+</p>
+
 
 </a>
 
-        <div class="category-card">
-          <div class="category-icon">◇</div>
-          <h3>الإنسان والثقافة</h3>
-          <p>
-            الهوية، الذاكرة، الثقافة، الرموز، اللغة والممارسات اليومية.
-          </p>
-        </div>
 
-        <div class="category-card">
-          <div class="category-icon">⌘</div>
-          <h3>السياسات العمومية</h3>
-          <p>
-            قراءة السياسات والمؤسسات وآثار القرارات العمومية على المجتمع.
-          </p>
-        </div>
 
-        <div class="category-card">
-          <div class="category-icon">◌</div>
-          <h3>مفاهيم وقراءات</h3>
-          <p>
-            شرح مفاهيم ونظريات من العلوم الاجتماعية وربطها بالواقع.
-          </p>
-        </div>
+<a
+    href="categories/field-notes.html"
+    class="category-card"
+    style="
+        text-decoration:none;
+        color:inherit;
+        display:block;
+    "
+>
 
-        <div class="category-card">
-          <div class="category-icon">✦</div>
-          <h3>أسئلة مفتوحة</h3>
-          <p>
-            أسئلة بحثية أولية تفتح المجال للنقاش والدراسة والتحقق الميداني.
-          </p>
-        </div>
 
-      </div>
-    </div>
-  </section>
+<div class="category-icon">
+✦
+</div>
 
-  <!-- LATEST -->
-  <section class="section" id="latest" style="background:#f1ede7;">
-    <div class="container">
 
-      <div class="section-title">
-        <span>أحدث المنشورات</span>
-        <h2>شذرات من الواقع</h2>
-        <p>
-          قراءات قصيرة ومنظمة تنطلق من تفاصيل الواقع الاجتماعي
-          نحو السؤال والتحليل العلمي.
-        </p>
-      </div>
+<h3>
+ملاحظات ميدانية
+</h3>
 
-      <div class="articles-grid">
 
-        <!-- الأحدث: المشاركة الانتخابية -->
-        <article class="article-card latest-article">
+<p>
 
-          <div
-            class="article-image election-visual"
-            role="img"
-            aria-label="المشاركة الانتخابية في المغرب بعد انتخابات 23 شتنبر 2026"
-          >
-            <span class="election-visual-kicker">سوسيولوجيا المشاركة السياسية</span>
-            <strong>المشاركة 38.02%</strong>
-            <span class="election-visual-date">25 شتنبر 2026</span>
-          </div>
+مشاهد ووقائع من الميدان
 
-          <div class="article-body">
+يتم وصفها وتحليلها
 
-            <div class="article-heading-row">
-              <span class="article-tag">شذرة من الواقع</span>
-              <span class="latest-badge">الأحدث</span>
-            </div>
+وفق منظور علمي
 
-            <h3>
-              حين لا يذهب الجميع الى الصندوق:
-              ماذا نسأل عن المشاركة الانتخابية؟
-            </h3>
+</p>
 
-            <p>
-              قراءة سوسيولوجية في ما تقوله نسبة المشاركة الانتخابية،
-              وما لا تستطيع الارقام وحدها ان تخبرنا به
-              عن علاقة المواطن بالتصويت والسياسة والمؤسسات.
-            </p>
 
-            <a
-              class="read-more"
-              href="articles/electoral-participation-morocco-2026.html"
-            >
-              اقرأ الشذرة كاملة ←
-            </a>
+</a>
 
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>25 شتنبر 2026</span>
-            </div>
 
-          </div>
 
-        </article>
-        <!-- الدخول المدرسي وتفاوت الفرص -->
-        <article class="article-card">
+<a
+    href="categories/social-transformations.html"
+    class="category-card"
+    style="
+        text-decoration:none;
+        color:inherit;
+        display:block;
+    "
+>
 
-          <div
-            class="article-image education-visual"
-            role="img"
-            aria-label="الدخول المدرسي وتفاوت الفرص في المغرب"
-          >
-            <span class="education-visual-kicker">سوسيولوجيا التربية</span>
-            <strong>الدخول المدرسي 2026</strong>
-            <span class="education-visual-date">21 شتنبر 2026</span>
-          </div>
 
-          <div class="article-body">
+<div class="category-icon">
+◎
+</div>
 
-            <span class="article-tag">شذرة من الواقع</span>
 
-            <h3>
-              قبل ان يبدأ الدرس:
-              ماذا يكشف الدخول المدرسي عن تفاوت الفرص؟
-            </h3>
+<h3>
+تحولات اجتماعية
+</h3>
 
-            <p>
-              قراءة سوسيولوجية في الدخول المدرسي بوصفه تجربة
-              لا تبدأ داخل القسم فقط، بل تتشكل ايضا من ظروف الاسرة
-              والموارد اليومية والدعم والمسافة عن المؤسسة التعليمية.
-            </p>
 
-            <a
-              class="read-more"
-              href="articles/school-entry-inequality-morocco-2026.html"
-            >
-              اقرأ الشذرة كاملة ←
-            </a>
+<p>
 
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>21 شتنبر 2026</span>
-            </div>
+الأسرة،
 
-          </div>
+الشباب،
 
-        </article>
+العمل،
 
-        <!-- الانتخابات التشريعية والحياة اليومية -->
-        <article class="article-card">
+الهجرة،
 
-          <div
-            class="article-image election-visual"
-            role="img"
-            aria-label="الانتخابات التشريعية المغربية 2026"
-          >
-            <span class="election-visual-kicker">الانتخابات التشريعية</span>
-            <strong>المغرب 2026</strong>
-            <span class="election-visual-date">23 شتنبر 2026</span>
-          </div>
+التكنولوجيا،
 
-          <div class="article-body">
+التعليم
 
-            <span class="article-tag">شذرة من الواقع</span>
+والمدينة
 
-            <h3>
-              حين تدخل الانتخابات الى تفاصيل اليومي:
-              اين نلتقي بالسياسة؟
-            </h3>
+</p>
 
-            <p>
-              قراءة اجتماعية في الطريقة التي تدخل بها الانتخابات
-              الى المقهى والشارع والهاتف والحديث اليومي،
-              وكيف تتشكل علاقة المواطن بالسياسة والمؤسسات.
-            </p>
 
-            <a
-              class="read-more"
-              href="articles/elections-everyday-politics-morocco-2026.html"
-            >
-              اقرأ الشذرة كاملة ←
-            </a>
+</a>
 
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>18 شتنبر 2026</span>
-            </div>
 
-          </div>
 
-        </article>
+<div class="category-card">
 
-          <!-- شذرة: من يترك مقعده لمن؟ -->
+
+<div class="category-icon">
+◇
+</div>
+
+
+<h3>
+الإنسان والثقافة
+</h3>
+
+
+<p>
+
+الهوية،
+
+الذاكرة،
+
+الثقافة،
+
+الرموز،
+
+اللغة
+
+والممارسات اليومية.
+
+</p>
+
+
+</div>
+
+
+
+<div class="category-card">
+
+
+<div class="category-icon">
+⌘
+</div>
+
+
+<h3>
+السياسات العمومية
+</h3>
+
+
+<p>
+
+قراءة السياسات
+
+والمؤسسات
+
+وآثار القرارات العمومية
+
+على المجتمع.
+
+</p>
+
+
+</div>
+
+
+
+<div class="category-card">
+
+
+<div class="category-icon">
+◌
+</div>
+
+
+<h3>
+مفاهيم وقراءات
+</h3>
+
+
+<p>
+
+شرح مفاهيم ونظريات
+
+من العلوم الاجتماعية
+
+وربطها بالواقع.
+
+</p>
+
+
+</div>
+
+
+
+<div class="category-card">
+
+
+<div class="category-icon">
+✦
+</div>
+
+
+<h3>
+أسئلة مفتوحة
+</h3>
+
+
+<p>
+
+أسئلة بحثية أولية
+
+تفتح المجال للنقاش
+
+والدراسة
+
+والتحقق الميداني.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     LATEST SHADHARAT
+     ========================================= -->
+
+<section
+    class="section"
+    id="latest"
+    style="background:#f1ede7;"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span>
+أحدث المنشورات
+</span>
+
+
+<h2>
+شذرات من الواقع
+</h2>
+
+
+<p>
+
+قراءات قصيرة ومنظمة
+
+تنطلق من تفاصيل الواقع الاجتماعي
+
+نحو السؤال
+
+والتحليل العلمي.
+
+</p>
+
+
+</div>
+
+
+
+<div class="articles-grid">
+
+
+<!-- =========================================
+     الأحدث: الذكاء الاصطناعي والتعلم
+     ========================================= -->
+
+<article
+    class="article-card latest-article"
+>
+
+
+<div
+    class="article-image ai-visual"
+    role="img"
+    aria-label="الذكاء الاصطناعي والتعلم داخل الجامعة"
+>
+
+
+<span class="ai-visual-kicker">
+
+سوسيولوجيا التربية والتحول الرقمي
+
+</span>
+
+
+<strong>
+
+الذكاء الاصطناعي والتعلم
+
+</strong>
+
+
+<span class="ai-visual-date">
+
+11 اكتوبر 2026
+
+</span>
+
+
+</div>
+
+
+
+<div class="article-body">
+
+
+<div class="article-heading-row">
+
+
+<span class="article-tag">
+
+شذرة تحليلية
+
+</span>
+
+
+<span class="latest-badge">
+
+الأحدث
+
+</span>
+
+
+</div>
+
+
+
+<h3>
+
+حين يدخل الذكاء الاصطناعي الى قاعة الدرس:
+
+هل تغير معنى التعلم؟
+
+</h3>
+
+
+<p>
+
+قراءة سوسيولوجية في الطريقة التي يعيد بها الذكاء الاصطناعي
+
+تشكيل علاقة الطالب بالمعرفة
+
+والواجب
+
+والتقييم،
+
+وما يطرحه ذلك
+
+من اسئلة جديدة
+
+داخل المدرسة والجامعة.
+
+</p>
+
+
+
+<a
+    class="read-more"
+    href="articles/ai-classroom-learning-2026.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+11 اكتوبر 2026
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     المشاركة الانتخابية
+     ========================================= -->
 
 <article class="article-card">
 
-  <img
+
+<div
+    class="article-image election-visual"
+    role="img"
+    aria-label="المشاركة الانتخابية في المغرب بعد انتخابات 23 شتنبر 2026"
+>
+
+
+<span class="election-visual-kicker">
+
+سوسيولوجيا المشاركة السياسية
+
+</span>
+
+
+<strong>
+
+المشاركة 38.02%
+
+</strong>
+
+
+<span class="election-visual-date">
+
+25 شتنبر 2026
+
+</span>
+
+
+</div>
+
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+شذرة من الواقع
+
+</span>
+
+
+<h3>
+
+حين لا يذهب الجميع الى الصندوق:
+
+ماذا نسأل عن المشاركة الانتخابية؟
+
+</h3>
+
+
+<p>
+
+قراءة سوسيولوجية
+
+في ما تقوله نسبة المشاركة الانتخابية،
+
+وما لا تستطيع الارقام وحدها
+
+ان تخبرنا به
+
+عن علاقة المواطن
+
+بالتصويت
+
+والسياسة
+
+والمؤسسات.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/electoral-participation-morocco-2026.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+25 شتنبر 2026
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     الدخول المدرسي وتفاوت الفرص
+     ========================================= -->
+
+<article class="article-card">
+
+
+<div
+    class="article-image education-visual"
+    role="img"
+    aria-label="الدخول المدرسي وتفاوت الفرص في المغرب"
+>
+
+
+<span class="education-visual-kicker">
+
+سوسيولوجيا التربية
+
+</span>
+
+
+<strong>
+
+الدخول المدرسي 2026
+
+</strong>
+
+
+<span class="education-visual-date">
+
+21 شتنبر 2026
+
+</span>
+
+
+</div>
+
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+شذرة من الواقع
+
+</span>
+
+
+<h3>
+
+قبل ان يبدأ الدرس:
+
+ماذا يكشف الدخول المدرسي
+
+عن تفاوت الفرص؟
+
+</h3>
+
+
+<p>
+
+قراءة سوسيولوجية في الدخول المدرسي
+
+بوصفه تجربة
+
+لا تبدأ داخل القسم فقط،
+
+بل تتشكل ايضا
+
+من ظروف الاسرة
+
+والموارد اليومية
+
+والدعم
+
+والمسافة عن المؤسسة التعليمية.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/school-entry-inequality-morocco-2026.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+21 شتنبر 2026
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     الانتخابات والحياة اليومية
+     ========================================= -->
+
+<article class="article-card">
+
+
+<div
+    class="article-image election-visual"
+    role="img"
+    aria-label="الانتخابات التشريعية المغربية 2026"
+>
+
+
+<span class="election-visual-kicker">
+
+الانتخابات التشريعية
+
+</span>
+
+
+<strong>
+
+المغرب 2026
+
+</strong>
+
+
+<span class="election-visual-date">
+
+23 شتنبر 2026
+
+</span>
+
+
+</div>
+
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+شذرة من الواقع
+
+</span>
+
+
+<h3>
+
+حين تدخل الانتخابات الى تفاصيل اليومي:
+
+اين نلتقي بالسياسة؟
+
+</h3>
+
+
+<p>
+
+قراءة اجتماعية
+
+في الطريقة التي تدخل بها الانتخابات
+
+الى المقهى
+
+والشارع
+
+والهاتف
+
+والحديث اليومي،
+
+وكيف تتشكل علاقة المواطن
+
+بالسياسة
+
+والمؤسسات.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/elections-everyday-politics-morocco-2026.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+18 شتنبر 2026
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     من يترك مقعده لمن؟
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
     class="article-image"
     loading="lazy"
     src="https://images.unsplash.com/photo-1756753103801-76980a5b5979?auto=format&fit=crop&w=1200&q=85"
     alt="ركاب داخل حافلة للنقل العمومي"
-  >
+>
 
-  <div class="article-body">
 
-    <span class="article-tag">
-      ملاحظات ميدانية
-    </span>
+<div class="article-body">
 
-    <h3>
-      من يترك مقعده لمن؟
-      ملاحظة ميدانية من داخل الحافلة المغربية
-    </h3>
 
-    <p>
-      قراءة في القواعد الاجتماعية غير المكتوبة
-      التي تنظم الأولوية والاحترام والتدخل
-      داخل وسائل النقل العمومي.
-    </p>
+<span class="article-tag">
 
-    <a
-      class="read-more"
-      href="articles/bus-seat-social-rules.html"
-    >
-      اقرأ الشذرة كاملة ←
-    </a>
+ملاحظات ميدانية
 
-    <div class="article-meta">
+</span>
 
-      <span>
-        هيئة تحرير شذرات
-      </span>
 
-      <span>
-        9 شتنبر 2026
-      </span>
+<h3>
 
-    </div>
+من يترك مقعده لمن؟
 
-  </div>
+ملاحظة ميدانية من داخل الحافلة المغربية
+
+</h3>
+
+
+<p>
+
+قراءة في القواعد الاجتماعية غير المكتوبة
+
+التي تنظم الأولوية
+
+والاحترام
+
+والتدخل
+
+داخل وسائل النقل العمومي.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/bus-seat-social-rules.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+9 شتنبر 2026
+</span>
+
+
+</div>
+
+
+</div>
+
 
 </article>
-<!-- 01 شذرة: الجوار في المدينة المغربية -->
+
+
+
+<!-- =========================================
+     الجوار في المدينة المغربية
+     ========================================= -->
 
 <article class="article-card">
 
-  <img
+
+<img
     class="article-image"
     loading="lazy"
     src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=85"
     alt="حي سكني وعلاقات الجوار"
-  >
+>
 
-  <div class="article-body">
 
-    <span class="article-tag">
-      شذرات اجتماعية
-    </span>
+<div class="article-body">
 
-    <h3>
-      حين يتوقف الجار عن طرق الباب:
-      كيف تغيرت علاقة الجيران في المدينة المغربية؟
-    </h3>
 
-    <p>
-      قراءة اجتماعية في تغير علاقات الجوار داخل المدينة المغربية،
-      وتحول معنى القرب والخصوصية والتضامن
-      مع تغير السكن وأنماط الحياة اليومية.
-    </p>
+<span class="article-tag">
 
-    <a
-      class="read-more"
-      href="articles/neighbours-moroccan-city.html"
-    >
-      اقرأ الشذرة كاملة ←
-    </a>
+شذرات اجتماعية
 
-    <div class="article-meta">
-      <span>هيئة تحرير شذرات</span>
-      <span>9 شتنبر 2026</span>
-    </div>
+</span>
 
-  </div>
+
+<h3>
+
+حين يتوقف الجار عن طرق الباب:
+
+كيف تغيرت علاقة الجيران في المدينة المغربية؟
+
+</h3>
+
+
+<p>
+
+قراءة اجتماعية
+
+في تغير علاقات الجوار
+
+داخل المدينة المغربية،
+
+وتحول معنى القرب
+
+والخصوصية
+
+والتضامن
+
+مع تغير السكن
+
+وأنماط الحياة اليومية.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/neighbours-moroccan-city.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+9 شتنبر 2026
+</span>
+
+
+</div>
+
+
+</div>
+
 
 </article>
-        <!-- 01 السياسات العمومية -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1772525379803-571add7d87a8?auto=format&fit=crop&w=1200&q=80"
-            alt="فضاء لتقديم خدمة عمومية للمواطنين">
-
-          <div class="article-body">
-            <span class="article-tag">السياسات العمومية</span>
-
-            <h3>
-              حين تصل السياسة العمومية إلى المواطن:
-              المسافة بين القرار والتطبيق
-            </h3>
-
-            <p>
-              قراءة اجتماعية في الطريقة التي تتحول بها القرارات والبرامج
-              العمومية من نصوص ومخططات إلى تجربة يومية يعيشها المواطن.
-            </p>
-
-            <a class="read-more"
-               href="articles/public-policy-implementation.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>9 شتنبر 2026</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 02 الواسطة -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
-            alt="العلاقات الاجتماعية داخل فضاء مهني">
-
-          <div class="article-body">
-            <span class="article-tag">شذرات اجتماعية</span>
-
-            <h3>حين تصبح المعرفة أقصر من المسطرة</h3>
-
-            <p>
-              ماذا يحدث عندما تصبح معرفة الشخص المناسب أكثر فعالية من معرفة
-              المسطرة؟ قراءة سوسيولوجية في الواسطة والعلاقات الاجتماعية
-              والثقة بالمؤسسات في المغرب.
-            </p>
-
-            <a class="read-more"
-               href="articles/wasta-morocco.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>23 غشت 2026</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 03 المستشفى والانتظار -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80"
-            alt="مرفق صحي ومستشفى">
-
-          <div class="article-body">
-            <span class="article-tag">شذرات اجتماعية</span>
-
-            <h3>
-              في قاعة الانتظار:
-              سوسيولوجيا الزمن داخل المستشفى المغربي
-            </h3>
-
-            <p>
-              قراءة اجتماعية في تجربة الانتظار داخل المستشفيات المغربية،
-              حيث يصبح الزمن جزءا من تجربة المرض وعلاقة المواطن بالمؤسسة الصحية.
-            </p>
-
-            <a class="read-more"
-               href="articles/waiting-hospitals-morocco.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>شذرة اجتماعية</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 04 الهاتف داخل الأسرة -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&q=80"
-            alt="هاتف ذكي في الحياة اليومية">
-
-          <div class="article-body">
-            <span class="article-tag">ملاحظات ميدانية</span>
-
-            <h3>
-              الهاتف فوق الطاولة:
-              كيف تغيرت جلساتنا العائلية دون أن ننتبه؟
-            </h3>
-
-            <p>
-              ملاحظة ميدانية تحليلية حول حضور الهاتف الذكي داخل الجلسات
-              العائلية، وتحول معنى الحضور والانتباه والتواصل في الحياة اليومية.
-            </p>
-
-            <a class="read-more"
-               href="articles/phone-family-gatherings.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>ملاحظة ميدانية</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 05 الهوية الرقمية -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
-            alt="استخدام التكنولوجيا والمنصات الرقمية">
-
-          <div class="article-body">
-            <span class="article-tag">الإنسان والثقافة</span>
-
-            <h3>
-              الهوية في زمن المنصات الرقمية:
-              كيف تغير وسائل التواصل الطريقة التي نرى بها أنفسنا؟
-            </h3>
-
-            <p>
-              قراءة علمية في الهوية الرقمية وتقديم الذات وتأثير وسائل التواصل
-              والخوارزميات في بناء الهوية والثقافة.
-            </p>
-
-            <a class="read-more"
-               href="articles/digital-identity-social-media.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>شذرة تحليلية علمية</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 06 التحولات الاجتماعية في المغرب -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=82"
-            alt="فضاء حضري وتحولات في أنماط السكن">
-
-          <div class="article-body">
-            <span class="article-tag">المجتمع والتحولات</span>
-
-            <h3>
-              التحولات الاجتماعية في المغرب:
-              كيف يتغير المجتمع المغربي؟
-            </h3>
-
-            <p>
-              قراءة سوسيولوجية في تغير الأسرة والمدينة والشباب والعمل
-              والرقمنة وأنماط الحياة داخل المجتمع المغربي.
-            </p>
-
-            <a class="read-more"
-               href="articles/transformations-sociales-maroc.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>شذرة تحليلية</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 07 المقهى والعمل -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80"
-            alt="فضاء عمل داخل مقهى">
-
-          <div class="article-body">
-            <span class="article-tag">تحولات اجتماعية</span>
-
-            <h3>حين يتحول المقهى إلى فضاء للعمل</h3>
-
-            <p>
-              ملاحظة حول حضور العمل عن بعد داخل المقهى وكيف يعيد الاقتصاد
-              الرقمي تعريف العلاقة بين فضاء العمل والفضاء العام.
-            </p>
-
-            <a class="read-more"
-               href="articles/cafe-maroc.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>شذرة تحليلية</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 08 الحي والتحولات -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
-            alt="حي سكني ومجال عمراني">
-
-          <div class="article-body">
-            <span class="article-tag">المدينة والمجتمع</span>
-
-            <h3>ماذا يخبرنا الحي عن التحولات الاجتماعية؟</h3>
-
-            <p>
-              قراءة أولية في علاقة تغير المجال العمراني بأنماط السكن
-              والتضامن والعلاقات بين السكان.
-            </p>
-
-            <a class="read-more"
-               href="articles/telephone-quartier.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>ملاحظة ميدانية</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- 09 القانون والممارسة -->
-        <article class="article-card">
-          <img
-            class="article-image"
-            loading="lazy"
-            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
-            alt="وثائق وقانون وممارسة إدارية">
-
-          <div class="article-body">
-            <span class="article-tag">القانون والمجتمع</span>
-
-            <h3>بين النص القانوني والممارسة اليومية</h3>
-
-            <p>
-              قراءة اجتماعية قانونية في الفجوة بين النص القانوني والممارسة
-              اليومية، وكيف تتشكل القاعدة القانونية داخل الواقع الاجتماعي.
-            </p>
-
-            <a class="read-more"
-               href="articles/droit-pratique.html">
-              اقرأ الشذرة كاملة ←
-            </a>
-
-            <div class="article-meta">
-              <span>هيئة تحرير شذرات</span>
-              <span>قراءة قانونية</span>
-            </div>
-          </div>
-        </article>
-</div>
-    </div>
-  </section>
-
-  <!-- METHODOLOGY -->
-  <section class="section method-section" id="method">
-    <div class="container">
-
-      <div class="section-title">
-        <span style="color:#d7b38b;">منهجية المنصة</span>
-        <h2>كيف تتحول الملاحظة إلى شذرة؟</h2>
-        <p>
-          لا تنشر المنصة الانطباع الخام، بل تشجع على المرور من الملاحظة
-          إلى السؤال ثم إلى التحليل.
-        </p>
-      </div>
-
-      <div class="method-steps">
-
-        <div class="method-card">
-          <div class="method-number">01</div>
-          <h3>الملاحظة</h3>
-          <p>رصد واقعة أو ممارسة أو ظاهرة من الواقع الاجتماعي.</p>
-        </div>
-
-        <div class="method-card">
-          <div class="method-number">02</div>
-          <h3>السياق</h3>
-          <p>تحديد المكان والظروف الاجتماعية المرتبطة بالملاحظة.</p>
-        </div>
-
-        <div class="method-card">
-          <div class="method-number">03</div>
-          <h3>السؤال</h3>
-          <p>صياغة السؤال الذي تثيره الواقعة بدل الاكتفاء بوصفها.</p>
-        </div>
-
-        <div class="method-card">
-          <div class="method-number">04</div>
-          <h3>التحليل</h3>
-          <p>ربط الملاحظة بمفهوم أو سياق أو قراءة علمية أو قانونية.</p>
-        </div>
-
-        <div class="method-card">
-          <div class="method-number">05</div>
-          <h3>فتح النقاش</h3>
-          <p>إنهاء الشذرة بسؤال أو فرضية قابلة للبحث والنقاش.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PUBLICATION TYPES -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-title">
-        <span>أنواع المساهمات</span>
-        <h2>عدد الكلمات المعتمد</h2>
-        <p>
-          يجب احترام الحدود التالية، ولا تقبل الاستثناءات إلا بقرار من هيئة التحرير.
-        </p>
-      </div>
-
-      <div class="publication-table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>نوع المساهمة</th>
-              <th>عدد الكلمات</th>
-              <th>طبيعتها</th>
-              <th>المراجع</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>شذرة من الواقع</td>
-              <td>500 – 900 كلمة</td>
-              <td>واقعة + ملاحظة + سؤال</td>
-              <td>عند الحاجة</td>
-            </tr>
-
-            <tr>
-              <td>شذرة تحليلية</td>
-              <td>900 – 1500 كلمة</td>
-              <td>ملاحظة + تحليل مفاهيمي</td>
-              <td>مطلوبة عند الاستناد إلى أفكار علمية</td>
-            </tr>
-
-            <tr>
-              <td>المجتمع والقانون</td>
-              <td>1000 – 1800 كلمة</td>
-              <td>تحليل اجتماعي وقانوني</td>
-              <td>إلزامية</td>
-            </tr>
-
-            <tr>
-              <td>ملاحظة ميدانية</td>
-              <td>1000 – 2000 كلمة</td>
-              <td>ملاحظة أو تجربة ميدانية</td>
-              <td>حسب طبيعة المساهمة</td>
-            </tr>
-
-            <tr>
-              <td>قراءة في مفهوم أو ظاهرة</td>
-              <td>1200 – 2000 كلمة</td>
-              <td>قراءة تفسيرية</td>
-              <td>إلزامية</td>
-            </tr>
-
-            <tr>
-              <td>ورقة قصيرة</td>
-              <td>2000 – 3500 كلمة</td>
-              <td>إشكالية وتحليل موسع</td>
-              <td>إلزامية</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONDITIONS -->
-  <section class="section" id="conditions" style="background:#f1ede7;">
-    <div class="container">
-
-      <div class="section-title">
-        <span>السياسة التحريرية</span>
-        <h2>شروط النشر</h2>
-        <p>
-          تعتمد المنصة معايير تحريرية صارمة لضمان جودة المحتوى وأصالته.
-        </p>
-      </div>
-
-      <div class="conditions-layout">
-
-        <aside class="conditions-side">
-          <h3>المعيار الأساسي</h3>
-          <p>
-            لا تنشر «شذرات» الانطباعات العابرة، بل النصوص التي تجمع بين
-            ملاحظة واضحة، وسؤال معرفي، وتحليل منضبط، واحترام أخلاقيات النشر.
-          </p>
-        </aside>
-
-        <div class="conditions-list">
-
-          <div class="condition">
-            <h4>1. الأصالة</h4>
-            <p>
-              يجب أن يكون النص أصيلًا ومن إعداد صاحبه، وألا يتضمن نقلًا
-              غير موثق أو انتحالًا كليًا أو جزئيًا.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>2. الارتباط بالواقع</h4>
-            <p>
-              يجب أن تنطلق المساهمة من ظاهرة أو واقعة أو ممارسة أو سؤال
-              مرتبط بالواقع الاجتماعي أو الإنساني أو القانوني.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>3. التمييز بين الوقائع والتفسير</h4>
-            <p>
-              يتعين التمييز بين ما تمت ملاحظته، وما يمثل تفسير الكاتب،
-              وما يستند إلى مصدر أو مرجع.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>4. المصادر</h4>
-            <p>
-              كل معلومة إحصائية أو قانونية أو تاريخية أو نظرية قابلة للتحقق
-              يجب أن تستند إلى مصدر واضح.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>5. منع المراجع المختلقة</h4>
-            <p>
-              يؤدي اكتشاف مرجع غير موجود أو اقتباس مختلق أو معلومة ملفقة
-              إلى رفض النص مباشرة.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>6. استخدام الذكاء الاصطناعي</h4>
-            <p>
-              لا تقبل النصوص المولدة آليًا بالكامل على أنها إنتاج علمي شخصي.
-              ويبقى الكاتب مسؤولًا عن صحة جميع المعلومات والمراجع.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>7. احترام الأشخاص والخصوصية</h4>
-            <p>
-              يمنع نشر البيانات الشخصية أو المعلومات التي تسمح بالتعرف
-              على أشخاص في موضوعات حساسة دون مبرر وموافقة مناسبة.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>8. اللغة العلمية</h4>
-            <p>
-              يجب أن يكون النص واضحًا ومتوازنًا وخاليًا من السب والقذف
-              والدعاية والخطاب التمييزي والتعميمات غير المؤسسة.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>9. المراجعة التحريرية</h4>
-            <p>
-              جميع المساهمات تخضع للفحص الأولي والمراجعة التحريرية،
-              ويمكن طلب تعديلات قبل اتخاذ قرار النشر.
-            </p>
-          </div>
-
-          <div class="condition">
-            <h4>10. حق الرفض</h4>
-            <p>
-              تحتفظ هيئة التحرير بحق رفض أي مساهمة لا تتوافق مع الهوية
-              العلمية أو المعايير التحريرية للمنصة.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT DETAILS -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-title">
-        <span>هويتنا</span>
-        <h2>مرتكزات المنصة</h2>
-      </div>
-
-      <div class="about-grid">
-
-        <div class="about-card">
-          <h3>الرؤية</h3>
-          <p>
-            بناء فضاء رقمي يجعل تفاصيل الحياة اليومية نقطة انطلاق
-            لإنتاج المعرفة الاجتماعية والإنسانية والقانونية.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <h3>الرسالة</h3>
-          <p>
-            تشجيع الطلبة والباحثين والممارسين على الملاحظة والتحليل
-            والكتابة العلمية المختصرة والمنضبطة.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <h3>القيم</h3>
-          <p>
-            النزاهة العلمية، الاستقلالية، الدقة، احترام الاختلاف،
-            حماية الخصوصية، والانفتاح على تعدد المناهج والتخصصات.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TEAM -->
-  <section class="section" id="team" style="background:#f1ede7;">
-    <div class="container">
-
-      <div class="section-title">
-        <span>الحكامة العلمية</span>
-        <h2>هيئة التحرير</h2>
-        <p>
-          تشرف هيئة التحرير على مراجعة المساهمات وتتبع الجودة العلمية والتحريرية للمنصة.
-        </p>
-      </div>
-
-      <div class="team-grid">
-
-       <div class="team-card">
-    <div class="team-avatar">ي</div>
-
-    <h3>رئيس التحرير ومدير المنصة</h3>
-
-    <p><strong>ياسين ابحري</strong></p>
-
-    <p>
-        طالب باحث في علم الاجتماع والانثروبولوجيا
-        بجامعة محمد الخامس بالرباط.
-    </p>
-
-    <p>
-        <a href="mailto:shatharat.platform@gmail.com">
-            shatharat.platform@gmail.com
-        </a>
-    </p>
+
+
+
+<!-- =========================================
+     السياسات العمومية
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1772525379803-571add7d87a8?auto=format&fit=crop&w=1200&q=80"
+    alt="فضاء لتقديم خدمة عمومية للمواطنين"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+السياسات العمومية
+
+</span>
+
+
+<h3>
+
+حين تصل السياسة العمومية إلى المواطن:
+
+المسافة بين القرار والتطبيق
+
+</h3>
+
+
+<p>
+
+قراءة اجتماعية
+
+في الطريقة التي تتحول بها
+
+القرارات والبرامج العمومية
+
+من نصوص ومخططات
+
+إلى تجربة يومية
+
+يعيشها المواطن.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/public-policy-implementation.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+9 شتنبر 2026
+</span>
+
+
 </div>
 
-        <div class="team-card">
-          <div class="team-avatar">هـ</div>
-          <h3>هيئة التحرير</h3>
-          <p>مراجعة المساهمات وتتبع الجودة العلمية والتحريرية.</p>
-        </div>
 
-      </div>
-    </div>
-  </section>
+</div>
 
-  <!-- SUBMISSION -->
-  <section class="section submit-section" id="submit">
-    <div class="container">
 
-      <div class="submit-box">
-        <h2>أرسل شذرتك</h2>
+</article>
 
-        <p>
-          ترحب منصة شذرات بالمساهمات العلمية والفكرية في مجالات العلوم
-          الاجتماعية والإنسانية والقانونية. يرجى قراءة شروط النشر قبل الإرسال.
-        </p>
 
-        <div class="notice">
-          تأكد من احترام نوع المساهمة، وعدد الكلمات، والمراجع،
-          والضوابط الأخلاقية والتحريرية للمنصة.
-        </div>
 
-        <div style="text-align:center;margin-top:30px;">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc7FzN39xCCt9MwwBhJBcjnxnyvJnbMmLpWjbthBqzyPD4o-w/viewform?usp=dialog"
-            target="_blank"
-            rel="noopener noreferrer"
-            style="
-              display:inline-block;
-              background:#5f1d2d;
-              color:#ffffff;
-              padding:15px 34px;
-              border-radius:10px;
-              text-decoration:none;
-              font-weight:700;
-              font-size:17px;
-            ">
-            إرسال مساهمتك الآن
-          </a>
+<!-- =========================================
+     الواسطة
+     ========================================= -->
 
-          <p style="margin-top:15px;color:#666;">
-            سيتم تحويلك إلى استمارة منصة شذرات لإدخال بياناتك وإرفاق ملف المساهمة.
-          </p>
+<article class="article-card">
 
-          <p style="margin-top:10px;">
-            للاستفسار:
-            <a href="mailto:shatharat.platform@gmail.com"
-               style="color:#5f1d2d;font-weight:700;">
-              shatharat.platform@gmail.com
-            </a>
-          </p>
-        </div>
-      </div>
 
-    </div>
-  </section>
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
+    alt="العلاقات الاجتماعية داخل فضاء مهني"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+شذرات اجتماعية
+
+</span>
+
+
+<h3>
+
+حين تصبح المعرفة أقصر من المسطرة
+
+</h3>
+
+
+<p>
+
+ماذا يحدث
+
+عندما تصبح معرفة الشخص المناسب
+
+أكثر فعالية
+
+من معرفة المسطرة؟
+
+قراءة سوسيولوجية
+
+في الواسطة
+
+والعلاقات الاجتماعية
+
+والثقة بالمؤسسات
+
+في المغرب.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/wasta-morocco.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+23 غشت 2026
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     المستشفى والانتظار
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80"
+    alt="مرفق صحي ومستشفى"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+شذرات اجتماعية
+
+</span>
+
+
+<h3>
+
+في قاعة الانتظار:
+
+سوسيولوجيا الزمن داخل المستشفى المغربي
+
+</h3>
+
+
+<p>
+
+قراءة اجتماعية
+
+في تجربة الانتظار
+
+داخل المستشفيات المغربية،
+
+حيث يصبح الزمن
+
+جزءا من تجربة المرض
+
+وعلاقة المواطن
+
+بالمؤسسة الصحية.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/waiting-hospitals-morocco.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+شذرة اجتماعية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     الهاتف داخل الأسرة
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=1200&q=80"
+    alt="هاتف ذكي في الحياة اليومية"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+ملاحظات ميدانية
+
+</span>
+
+
+<h3>
+
+الهاتف فوق الطاولة:
+
+كيف تغيرت جلساتنا العائلية دون أن ننتبه؟
+
+</h3>
+
+
+<p>
+
+ملاحظة ميدانية تحليلية
+
+حول حضور الهاتف الذكي
+
+داخل الجلسات العائلية،
+
+وتحول معنى الحضور
+
+والانتباه
+
+والتواصل
+
+في الحياة اليومية.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/phone-family-gatherings.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+ملاحظة ميدانية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     الهوية الرقمية
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
+    alt="استخدام التكنولوجيا والمنصات الرقمية"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+الإنسان والثقافة
+
+</span>
+
+
+<h3>
+
+الهوية في زمن المنصات الرقمية:
+
+كيف تغير وسائل التواصل
+
+الطريقة التي نرى بها أنفسنا؟
+
+</h3>
+
+
+<p>
+
+قراءة علمية
+
+في الهوية الرقمية
+
+وتقديم الذات
+
+وتأثير وسائل التواصل
+
+والخوارزميات
+
+في بناء الهوية
+
+والثقافة.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/digital-identity-social-media.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+شذرة تحليلية علمية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     التحولات الاجتماعية في المغرب
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=82"
+    alt="فضاء حضري وتحولات في أنماط السكن"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+المجتمع والتحولات
+
+</span>
+
+
+<h3>
+
+التحولات الاجتماعية في المغرب:
+
+كيف يتغير المجتمع المغربي؟
+
+</h3>
+
+
+<p>
+
+قراءة سوسيولوجية
+
+في تغير الأسرة
+
+والمدينة
+
+والشباب
+
+والعمل
+
+والرقمنة
+
+وأنماط الحياة
+
+داخل المجتمع المغربي.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/transformations-sociales-maroc.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+شذرة تحليلية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     المقهى والعمل
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80"
+    alt="فضاء عمل داخل مقهى"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+تحولات اجتماعية
+
+</span>
+
+
+<h3>
+
+حين يتحول المقهى إلى فضاء للعمل
+
+</h3>
+
+
+<p>
+
+ملاحظة حول حضور العمل عن بعد
+
+داخل المقهى
+
+وكيف يعيد الاقتصاد الرقمي
+
+تعريف العلاقة
+
+بين فضاء العمل
+
+والفضاء العام.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/cafe-maroc.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+شذرة تحليلية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     الحي والتحولات
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+    alt="حي سكني ومجال عمراني"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+المدينة والمجتمع
+
+</span>
+
+
+<h3>
+
+ماذا يخبرنا الحي عن التحولات الاجتماعية؟
+
+</h3>
+
+
+<p>
+
+قراءة أولية
+
+في علاقة تغير المجال العمراني
+
+بأنماط السكن
+
+والتضامن
+
+والعلاقات بين السكان.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/telephone-quartier.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+ملاحظة ميدانية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+
+<!-- =========================================
+     القانون والممارسة
+     ========================================= -->
+
+<article class="article-card">
+
+
+<img
+    class="article-image"
+    loading="lazy"
+    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
+    alt="وثائق وقانون وممارسة إدارية"
+>
+
+
+<div class="article-body">
+
+
+<span class="article-tag">
+
+القانون والمجتمع
+
+</span>
+
+
+<h3>
+
+بين النص القانوني والممارسة اليومية
+
+</h3>
+
+
+<p>
+
+قراءة اجتماعية قانونية
+
+في الفجوة
+
+بين النص القانوني
+
+والممارسة اليومية،
+
+وكيف تتشكل القاعدة القانونية
+
+داخل الواقع الاجتماعي.
+
+</p>
+
+
+<a
+    class="read-more"
+    href="articles/droit-pratique.html"
+>
+
+اقرأ الشذرة كاملة ←
+
+</a>
+
+
+<div class="article-meta">
+
+
+<span>
+هيئة تحرير شذرات
+</span>
+
+
+<span>
+قراءة قانونية
+</span>
+
+
+</div>
+
+
+</div>
+
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     METHODOLOGY
+     ========================================= -->
+
+<section
+    class="section method-section"
+    id="method"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span style="color:#d7b38b;">
+
+منهجية المنصة
+
+</span>
+
+
+<h2>
+
+كيف تتحول الملاحظة إلى شذرة؟
+
+</h2>
+
+
+<p>
+
+لا تنشر المنصة الانطباع الخام،
+
+بل تشجع على المرور
+
+من الملاحظة
+
+إلى السؤال
+
+ثم إلى التحليل.
+
+</p>
+
+
+</div>
+
+
+
+<div class="method-steps">
+
+
+<div class="method-card">
+
+<div class="method-number">
+01
+</div>
+
+<h3>
+الملاحظة
+</h3>
+
+<p>
+
+رصد واقعة أو ممارسة أو ظاهرة
+
+من الواقع الاجتماعي.
+
+</p>
+
+</div>
+
+
+
+<div class="method-card">
+
+<div class="method-number">
+02
+</div>
+
+<h3>
+السياق
+</h3>
+
+<p>
+
+تحديد المكان
+
+والظروف الاجتماعية
+
+المرتبطة بالملاحظة.
+
+</p>
+
+</div>
+
+
+
+<div class="method-card">
+
+<div class="method-number">
+03
+</div>
+
+<h3>
+السؤال
+</h3>
+
+<p>
+
+صياغة السؤال الذي تثيره الواقعة
+
+بدل الاكتفاء بوصفها.
+
+</p>
+
+</div>
+
+
+
+<div class="method-card">
+
+<div class="method-number">
+04
+</div>
+
+<h3>
+التحليل
+</h3>
+
+<p>
+
+ربط الملاحظة
+
+بمفهوم
+
+أو سياق
+
+أو قراءة علمية
+
+أو قانونية.
+
+</p>
+
+</div>
+
+
+
+<div class="method-card">
+
+<div class="method-number">
+05
+</div>
+
+<h3>
+فتح النقاش
+</h3>
+
+<p>
+
+إنهاء الشذرة
+
+بسؤال أو فرضية
+
+قابلة للبحث
+
+والنقاش.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     PUBLICATION TYPES
+     ========================================= -->
+
+<section class="section">
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span>
+أنواع المساهمات
+</span>
+
+
+<h2>
+عدد الكلمات المعتمد
+</h2>
+
+
+<p>
+
+يجب احترام الحدود التالية،
+
+ولا تقبل الاستثناءات
+
+إلا بقرار من هيئة التحرير.
+
+</p>
+
+
+</div>
+
+
+
+<div class="publication-table-wrapper">
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+نوع المساهمة
+</th>
+
+<th>
+عدد الكلمات
+</th>
+
+<th>
+طبيعتها
+</th>
+
+<th>
+المراجع
+</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+شذرة من الواقع
+</td>
+
+<td>
+500 – 900 كلمة
+</td>
+
+<td>
+واقعة + ملاحظة + سؤال
+</td>
+
+<td>
+عند الحاجة
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+شذرة تحليلية
+</td>
+
+<td>
+900 – 1500 كلمة
+</td>
+
+<td>
+ملاحظة + تحليل مفاهيمي
+</td>
+
+<td>
+مطلوبة عند الاستناد إلى أفكار علمية
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+المجتمع والقانون
+</td>
+
+<td>
+1000 – 1800 كلمة
+</td>
+
+<td>
+تحليل اجتماعي وقانوني
+</td>
+
+<td>
+إلزامية
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+ملاحظة ميدانية
+</td>
+
+<td>
+1000 – 2000 كلمة
+</td>
+
+<td>
+ملاحظة أو تجربة ميدانية
+</td>
+
+<td>
+حسب طبيعة المساهمة
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+قراءة في مفهوم أو ظاهرة
+</td>
+
+<td>
+1200 – 2000 كلمة
+</td>
+
+<td>
+قراءة تفسيرية
+</td>
+
+<td>
+إلزامية
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+ورقة قصيرة
+</td>
+
+<td>
+2000 – 3500 كلمة
+</td>
+
+<td>
+إشكالية وتحليل موسع
+</td>
+
+<td>
+إلزامية
+</td>
+
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONDITIONS
+     ========================================= -->
+
+<section
+    class="section"
+    id="conditions"
+    style="background:#f1ede7;"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span>
+السياسة التحريرية
+</span>
+
+
+<h2>
+شروط النشر
+</h2>
+
+
+<p>
+
+تعتمد المنصة معايير تحريرية صارمة
+
+لضمان جودة المحتوى
+
+وأصالته.
+
+</p>
+
+
+</div>
+
+
+
+<div class="conditions-layout">
+
+
+<aside class="conditions-side">
+
+
+<h3>
+المعيار الأساسي
+</h3>
+
+
+<p>
+
+لا تنشر «شذرات» الانطباعات العابرة،
+
+بل النصوص التي تجمع بين
+
+ملاحظة واضحة،
+
+وسؤال معرفي،
+
+وتحليل منضبط،
+
+واحترام أخلاقيات النشر.
+
+</p>
+
+
+</aside>
+
+
+
+<div class="conditions-list">
+
+
+<div class="condition">
+
+<h4>
+1. الأصالة
+</h4>
+
+<p>
+
+يجب أن يكون النص أصيلا
+
+ومن إعداد صاحبه،
+
+وألا يتضمن نقلا غير موثق
+
+أو انتحالا كليا
+
+أو جزئيا.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+2. الارتباط بالواقع
+</h4>
+
+<p>
+
+يجب أن تنطلق المساهمة
+
+من ظاهرة
+
+أو واقعة
+
+أو ممارسة
+
+أو سؤال
+
+مرتبط بالواقع الاجتماعي
+
+أو الإنساني
+
+أو القانوني.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+3. التمييز بين الوقائع والتفسير
+</h4>
+
+<p>
+
+يتعين التمييز
+
+بين ما تمت ملاحظته،
+
+وما يمثل تفسير الكاتب،
+
+وما يستند إلى مصدر
+
+أو مرجع.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+4. المصادر
+</h4>
+
+<p>
+
+كل معلومة إحصائية
+
+أو قانونية
+
+أو تاريخية
+
+أو نظرية
+
+قابلة للتحقق
+
+يجب أن تستند
+
+إلى مصدر واضح.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+5. منع المراجع المختلقة
+</h4>
+
+<p>
+
+يؤدي اكتشاف مرجع غير موجود
+
+أو اقتباس مختلق
+
+أو معلومة ملفقة
+
+إلى رفض النص مباشرة.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+6. استخدام الذكاء الاصطناعي
+</h4>
+
+<p>
+
+لا تقبل النصوص المولدة آليا بالكامل
+
+على أنها إنتاج علمي شخصي.
+
+ويبقى الكاتب مسؤولا
+
+عن صحة جميع المعلومات
+
+والمراجع.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+7. احترام الأشخاص والخصوصية
+</h4>
+
+<p>
+
+يمنع نشر البيانات الشخصية
+
+أو المعلومات التي تسمح
+
+بالتعرف على أشخاص
+
+في موضوعات حساسة
+
+دون مبرر
+
+وموافقة مناسبة.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+8. اللغة العلمية
+</h4>
+
+<p>
+
+يجب أن يكون النص واضحا
+
+ومتوازنا
+
+وخاليا من السب والقذف
+
+والدعاية
+
+والخطاب التمييزي
+
+والتعميمات غير المؤسسة.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+9. المراجعة التحريرية
+</h4>
+
+<p>
+
+جميع المساهمات
+
+تخضع للفحص الأولي
+
+والمراجعة التحريرية،
+
+ويمكن طلب تعديلات
+
+قبل اتخاذ قرار النشر.
+
+</p>
+
+</div>
+
+
+
+<div class="condition">
+
+<h4>
+10. حق الرفض
+</h4>
+
+<p>
+
+تحتفظ هيئة التحرير
+
+بحق رفض أي مساهمة
+
+لا تتوافق
+
+مع الهوية العلمية
+
+أو المعايير التحريرية
+
+للمنصة.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT DETAILS
+     ========================================= -->
+
+<section class="section">
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span>
+هويتنا
+</span>
+
+
+<h2>
+مرتكزات المنصة
+</h2>
+
+
+</div>
+
+
+
+<div class="about-grid">
+
+
+<div class="about-card">
+
+
+<h3>
+الرؤية
+</h3>
+
+
+<p>
+
+بناء فضاء رقمي
+
+يجعل تفاصيل الحياة اليومية
+
+نقطة انطلاق
+
+لإنتاج المعرفة الاجتماعية
+
+والإنسانية
+
+والقانونية.
+
+</p>
+
+
+</div>
+
+
+
+<div class="about-card">
+
+
+<h3>
+الرسالة
+</h3>
+
+
+<p>
+
+تشجيع الطلبة
+
+والباحثين
+
+والممارسين
+
+على الملاحظة
+
+والتحليل
+
+والكتابة العلمية
+
+المختصرة
+
+والمنضبطة.
+
+</p>
+
+
+</div>
+
+
+
+<div class="about-card">
+
+
+<h3>
+القيم
+</h3>
+
+
+<p>
+
+النزاهة العلمية،
+
+الاستقلالية،
+
+الدقة،
+
+احترام الاختلاف،
+
+حماية الخصوصية،
+
+والانفتاح على تعدد المناهج
+
+والتخصصات.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     TEAM
+     ========================================= -->
+
+<section
+    class="section"
+    id="team"
+    style="background:#f1ede7;"
+>
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<span>
+الحكامة العلمية
+</span>
+
+
+<h2>
+هيئة التحرير
+</h2>
+
+
+<p>
+
+تشرف هيئة التحرير
+
+على مراجعة المساهمات
+
+وتتبع الجودة العلمية
+
+والتحريرية للمنصة.
+
+</p>
+
+
+</div>
+
+
+
+<div class="team-grid">
+
+
+<div class="team-card">
+
+
+<div class="team-avatar">
+
+ي
+
+</div>
+
+
+<h3>
+
+رئيس التحرير ومدير المنصة
+
+</h3>
+
+
+<p>
+
+<strong>
+
+ياسين ابحري
+
+</strong>
+
+</p>
+
+
+<p>
+
+طالب باحث
+
+في علم الاجتماع والانثروبولوجيا
+
+بجامعة محمد الخامس بالرباط.
+
+</p>
+
+
+<p>
+
+
+<a
+    href="mailto:shatharat.platform@gmail.com"
+>
+
+shatharat.platform@gmail.com
+
+</a>
+
+
+</p>
+
+
+</div>
+
+
+
+<div class="team-card">
+
+
+<div class="team-avatar">
+
+هـ
+
+</div>
+
+
+<h3>
+
+هيئة التحرير
+
+</h3>
+
+
+<p>
+
+مراجعة المساهمات
+
+وتتبع الجودة العلمية
+
+والتحريرية.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================
+     SUBMISSION
+     ========================================= -->
+
+<section
+    class="section submit-section"
+    id="submit"
+>
+
+<div class="container">
+
+
+<div class="submit-box">
+
+
+<h2>
+
+أرسل شذرتك
+
+</h2>
+
+
+<p>
+
+ترحب منصة شذرات
+
+بالمساهمات العلمية والفكرية
+
+في مجالات العلوم الاجتماعية
+
+والإنسانية
+
+والقانونية.
+
+يرجى قراءة شروط النشر
+
+قبل الإرسال.
+
+</p>
+
+
+
+<div class="notice">
+
+تأكد من احترام نوع المساهمة،
+
+وعدد الكلمات،
+
+والمراجع،
+
+والضوابط الأخلاقية
+
+والتحريرية للمنصة.
+
+</div>
+
+
+
+<div
+    style="
+        text-align:center;
+        margin-top:30px;
+    "
+>
+
+
+<a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSc7FzN39xCCt9MwwBhJBcjnxnyvJnbMmLpWjbthBqzyPD4o-w/viewform?usp=dialog"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+        display:inline-block;
+        background:#5f1d2d;
+        color:#ffffff;
+        padding:15px 34px;
+        border-radius:10px;
+        text-decoration:none;
+        font-weight:700;
+        font-size:17px;
+    "
+>
+
+إرسال مساهمتك الآن
+
+</a>
+
+
+
+<p
+    style="
+        margin-top:15px;
+        color:#666;
+    "
+>
+
+سيتم تحويلك إلى استمارة منصة شذرات
+
+لإدخال بياناتك
+
+وإرفاق ملف المساهمة.
+
+</p>
+
+
+
+<p
+    style="
+        margin-top:10px;
+    "
+>
+
+للاستفسار:
+
+
+<a
+    href="mailto:shatharat.platform@gmail.com"
+    style="
+        color:#5f1d2d;
+        font-weight:700;
+    "
+>
+
+shatharat.platform@gmail.com
+
+</a>
+
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
 
 </main>
 
+
+
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+
 <footer>
-  <div class="container">
 
-    <div class="footer-grid">
 
-      <div>
-        <h3>شذرات</h3>
-        <p>
-          منصة رقمية معرفية في العلوم الاجتماعية والإنسانية والقانونية،
-          تنطلق من تفاصيل الواقع نحو السؤال والتحليل العلمي.
-        </p>
-      </div>
+<div class="container">
 
-      <div>
-        <h3>روابط</h3>
-        <ul>
-          <li><a href="#about">عن المنصة</a></li>
-          <li><a href="#categories">الأقسام</a></li>
-          <li><a href="#conditions">شروط النشر</a></li>
-          <li><a href="#team">هيئة التحرير</a></li>
-          <li><a href="#submit">إرسال مساهمة</a></li>
-        </ul>
-      </div>
 
-      <div>
-        <h3>معلومات قانونية</h3>
-        <ul>
-          <li>سياسة الخصوصية</li>
-          <li>أخلاقيات النشر</li>
-          <li>حقوق النشر</li>
-          <li>سياسة استخدام الذكاء الاصطناعي</li>
-          <li>ISSN: قيد الإجراء</li>
-        </ul>
-      </div>
+<div class="footer-grid">
 
-    </div>
 
-    <div class="footer-bottom">
-      © 2026 منصة شذرات — جميع الحقوق محفوظة.
-    </div>
+<div>
 
-  </div>
+
+<h3>
+
+شذرات
+
+</h3>
+
+
+<p>
+
+منصة رقمية معرفية
+
+في العلوم الاجتماعية
+
+والإنسانية
+
+والقانونية،
+
+تنطلق من تفاصيل الواقع
+
+نحو السؤال
+
+والتحليل العلمي.
+
+</p>
+
+
+</div>
+
+
+
+<div>
+
+
+<h3>
+
+روابط
+
+</h3>
+
+
+<ul>
+
+
+<li>
+
+<a href="#about">
+
+عن المنصة
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#categories">
+
+الأقسام
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#conditions">
+
+شروط النشر
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#team">
+
+هيئة التحرير
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#submit">
+
+إرسال مساهمة
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+<div>
+
+
+<h3>
+
+معلومات قانونية
+
+</h3>
+
+
+<ul>
+
+
+<li>
+سياسة الخصوصية
+</li>
+
+
+<li>
+أخلاقيات النشر
+</li>
+
+
+<li>
+حقوق النشر
+</li>
+
+
+<li>
+سياسة استخدام الذكاء الاصطناعي
+</li>
+
+
+<li>
+ISSN: قيد الإجراء
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+© 2026 منصة شذرات — جميع الحقوق محفوظة.
+
+</div>
+
+
+</div>
+
+
 </footer>
 
+
+
 <script>
-  const menuButton = document.getElementById("menuButton");
-  const navLinks = document.getElementById("navLinks");
 
-  menuButton.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
+const menuButton =
+    document.getElementById("menuButton");
 
-  document.querySelectorAll("#navLinks a").forEach(function(link) {
-    link.addEventListener("click", function() {
-      navLinks.classList.remove("active");
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuButton.addEventListener(
+    "click",
+    function () {
+
+        navLinks.classList.toggle(
+            "active"
+        );
+
+    }
+);
+
+
+document
+    .querySelectorAll("#navLinks a")
+    .forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                navLinks.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
     });
-  });
+
 </script>
 
+
 </body>
+
 </html>
