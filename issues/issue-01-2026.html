@@ -1,9 +1,672 @@
-شذرات
-العدد الأول
-خريف 2026
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-محتويات العدد
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-سيتم إضافة الشذرات والمساهمات العلمية إلى هذا العدد لاحقا.
+  <title>العدد الاول | شذرات</title>
 
-العدد قيد الإعداد
+  <meta name="description"
+        content="العدد الاول من منصة شذرات للعلوم الاجتماعية والانسانية والقانونية.">
+
+  <link rel="canonical"
+        href="https://socialhumanities.github.io/issues/issue-01-2026.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+<style>
+
+:root {
+  --primary:#5f1d2d;
+  --primary-dark:#42121e;
+  --secondary:#9c6b3d;
+  --background:#f8f6f2;
+  --surface:#ffffff;
+  --text:#252525;
+  --muted:#6e6e6e;
+  --border:#e3ddd5;
+  --soft:#f0ebe4;
+  --radius:18px;
+  --shadow:0 12px 35px rgba(50,25,30,0.08);
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family:"Cairo",sans-serif;
+  background:var(--background);
+  color:var(--text);
+  line-height:1.9;
+}
+
+a {
+  text-decoration:none;
+  color:inherit;
+}
+
+.container {
+  width:min(92%,1100px);
+  margin:auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(195,145,69,0.16),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #fffaf3,
+      #f3e3e3
+    );
+
+  border-bottom:1px solid rgba(95,29,45,0.13);
+  box-shadow:0 8px 28px rgba(62,25,35,0.07);
+}
+
+.navbar {
+  min-height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand img {
+  width:65px;
+  height:65px;
+  object-fit:contain;
+}
+
+.brand h1 {
+  color:var(--primary);
+  font-size:1.8rem;
+  line-height:1.2;
+}
+
+.brand small {
+  color:#67585c;
+  font-size:.82rem;
+}
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  list-style:none;
+}
+
+.nav-links a {
+  display:block;
+  padding:9px 13px;
+  border-radius:9px;
+  color:var(--primary-dark);
+  font-weight:700;
+  font-size:.9rem;
+  transition:.2s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  background:var(--primary);
+  color:white;
+}
+
+
+/* =========================
+   ISSUE HERO
+   ========================= */
+
+.issue-hero {
+  position:relative;
+  overflow:hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(220,177,112,.22),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 15% 80%,
+      rgba(255,255,255,.06),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #351019,
+      #5f1d2d 55%,
+      #7b3346
+    );
+
+  color:white;
+  padding:90px 20px 85px;
+}
+
+.issue-hero::after {
+  content:"";
+  position:absolute;
+  width:320px;
+  height:320px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  left:-100px;
+  bottom:-150px;
+}
+
+.issue-hero-inner {
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.issue-label {
+  display:inline-block;
+  padding:7px 15px;
+  border:1px solid rgba(255,255,255,.35);
+  background:rgba(255,255,255,.08);
+  border-radius:999px;
+  font-size:.83rem;
+  margin-bottom:20px;
+}
+
+.issue-hero h2 {
+  font-size:clamp(2.8rem,7vw,5rem);
+  line-height:1.2;
+  margin-bottom:5px;
+}
+
+.issue-hero h3 {
+  color:#efd2ad;
+  font-size:1.8rem;
+  margin-bottom:8px;
+}
+
+.issue-date {
+  font-size:1.1rem;
+  color:rgba(255,255,255,.78);
+  margin-bottom:25px;
+}
+
+.issue-line {
+  width:70px;
+  height:3px;
+  background:#d7b38b;
+  margin:22px auto;
+  border-radius:20px;
+}
+
+.issue-description {
+  max-width:730px;
+  margin:auto;
+  color:rgba(255,255,255,.86);
+  font-size:1rem;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+  padding:65px 0;
+}
+
+.issue-intro {
+  text-align:center;
+  max-width:820px;
+  margin:0 auto 45px;
+}
+
+.issue-intro span {
+  color:var(--secondary);
+  font-weight:800;
+  font-size:.9rem;
+}
+
+.issue-intro h2 {
+  color:var(--primary-dark);
+  font-size:2rem;
+  margin:6px 0 12px;
+}
+
+.issue-intro p {
+  color:var(--muted);
+}
+
+
+/* =========================
+   CONTENT BOX
+   ========================= */
+
+.contents-box {
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:45px;
+  box-shadow:var(--shadow);
+}
+
+.contents-title {
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.contents-title h2 {
+  color:var(--primary);
+  font-size:1.8rem;
+}
+
+.contents-title::after {
+  content:"";
+  display:block;
+  width:55px;
+  height:3px;
+  background:var(--secondary);
+  margin:12px auto 0;
+  border-radius:10px;
+}
+
+
+/* =========================
+   EMPTY STATE
+   ========================= */
+
+.empty-state {
+  min-height:300px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #faf7f2,
+      #f2ece5
+    );
+
+  border:1px solid #e7dfd5;
+  border-radius:16px;
+
+  padding:40px 20px;
+}
+
+.empty-icon {
+  width:85px;
+  height:85px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:white;
+  border:1px solid var(--border);
+  color:var(--primary);
+  font-size:2rem;
+  margin-bottom:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.empty-state h3 {
+  color:var(--primary-dark);
+  font-size:1.35rem;
+  margin-bottom:8px;
+}
+
+.empty-state p {
+  color:var(--muted);
+  max-width:570px;
+}
+
+.status {
+  display:inline-block;
+  margin-top:20px;
+  background:#e5ddd2;
+  color:#66564b;
+  padding:7px 16px;
+  border-radius:999px;
+  font-size:.8rem;
+  font-weight:700;
+}
+
+
+/* =========================
+   EDITORIAL NOTE
+   ========================= */
+
+.editorial-note {
+  margin-top:30px;
+  padding:25px;
+  border-right:4px solid var(--secondary);
+  background:#faf7f2;
+  border-radius:10px;
+}
+
+.editorial-note strong {
+  display:block;
+  color:var(--primary);
+  margin-bottom:5px;
+}
+
+.editorial-note p {
+  color:var(--muted);
+  font-size:.92rem;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.back-area {
+  text-align:center;
+  margin-top:40px;
+}
+
+.back-button {
+  display:inline-block;
+  background:var(--primary);
+  color:white;
+  padding:12px 28px;
+  border-radius:10px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.back-button:hover {
+  background:var(--primary-dark);
+  transform:translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  background:#241116;
+  color:white;
+  text-align:center;
+  padding:35px 20px;
+  margin-top:65px;
+}
+
+footer strong {
+  display:block;
+  margin-bottom:5px;
+  font-size:1.1rem;
+}
+
+footer p {
+  color:rgba(255,255,255,.68);
+  font-size:.82rem;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:780px) {
+
+  .navbar {
+    flex-direction:column;
+    padding:15px 0;
+  }
+
+  .nav-links {
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .issue-hero {
+    padding:65px 18px;
+  }
+
+  .contents-box {
+    padding:28px 18px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="../index.html" class="brand">
+
+      <img src="../logo.png.png"
+           alt="شعار منصة شذرات">
+
+      <div>
+
+        <h1>شذرات</h1>
+
+        <small>
+          منصة للعلوم الاجتماعية والانسانية والقانونية
+        </small>
+
+      </div>
+
+    </a>
+
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="../index.html">الرئيسية</a>
+      </li>
+
+      <li>
+        <a href="../index.html#categories">الأقسام</a>
+      </li>
+
+      <li>
+        <a href="../index.html#latest">الشذرات</a>
+      </li>
+
+      <li>
+        <a class="active" href="#">الأعداد</a>
+      </li>
+
+      <li>
+        <a href="../index.html#submit">أرسل شذرتك</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+
+<section class="issue-hero">
+
+  <div class="issue-hero-inner">
+
+    <span class="issue-label">
+      سلسلة اعداد شذرات
+    </span>
+
+    <h2>
+      شذرات
+    </h2>
+
+    <h3>
+      العدد الاول
+    </h3>
+
+    <div class="issue-date">
+      خريف 2026
+    </div>
+
+    <div class="issue-line"></div>
+
+    <p class="issue-description">
+
+      يجمع العدد الاول من منصة شذرات مجموعة من القراءات
+      والملاحظات التي تنطلق من تفاصيل الحياة اليومية
+      نحو اسئلة اجتماعية وانسانية وتربوية وقانونية اوسع،
+      مع فتح المجال لمساهمات الباحثين والطلبة والمهتمين
+      بالعلوم الاجتماعية والانسانية.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+  <div class="container">
+
+
+    <div class="issue-intro">
+
+      <span>
+        العدد الاول
+      </span>
+
+      <h2>
+        من تفاصيل اليومي الى اسئلة المعرفة
+      </h2>
+
+      <p>
+        ستجمع هذه الصفحة مختلف الشذرات والمساهمات العلمية
+        التي ستدرج ضمن العدد الاول من منصة شذرات.
+      </p>
+
+    </div>
+
+
+
+    <section class="contents-box">
+
+
+      <div class="contents-title">
+
+        <h2>
+          محتويات العدد
+        </h2>
+
+      </div>
+
+
+
+      <div class="empty-state">
+
+        <div class="empty-icon">
+          ▤
+        </div>
+
+        <h3>
+          العدد قيد الاعداد
+        </h3>
+
+        <p>
+          سيتم اضافة الشذرات والمساهمات العلمية
+          الى هذا العدد تباعا بعد استكمال المراجعة التحريرية
+          واعتمادها للنشر.
+        </p>
+
+        <span class="status">
+          قيد الاعداد
+        </span>
+
+      </div>
+
+
+
+      <div class="editorial-note">
+
+        <strong>
+          ملاحظة تحريرية
+        </strong>
+
+        <p>
+          ستظهر هنا لاحقا عناوين الشذرات،
+          واسماء المساهمين،
+          والتخصصات،
+          وروابط القراءة الكاملة لكل مساهمة.
+        </p>
+
+      </div>
+
+
+
+      <div class="back-area">
+
+        <a class="back-button"
+           href="../index.html">
+
+          العودة الى الصفحة الرئيسية ←
+
+        </a>
+
+      </div>
+
+
+    </section>
+
+
+  </div>
+
+</main>
+
+
+
+<footer>
+
+  <strong>
+    شذرات
+  </strong>
+
+  <p>
+    منصة للعلوم الاجتماعية والانسانية والقانونية
+  </p>
+
+  <p>
+    © 2026 جميع الحقوق محفوظة
+  </p>
+
+</footer>
+
+
+</body>
+
+</html>
