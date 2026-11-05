@@ -2094,6 +2094,84 @@ footer h3{color:#efd6a7}
   .issue-deadline strong{font-size:1.65rem}
 }
 
+
+/* =========================================
+   ARTICLE ACTIONS + PDF BUTTONS
+   ========================================= */
+.article-actions{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:auto;
+    margin-bottom:16px;
+}
+
+.article-actions .read-more{
+    margin:0;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.pdf-button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    min-height:38px;
+    padding:8px 14px;
+    border-radius:10px;
+    background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+    color:#ffffff;
+    border:1px solid rgba(200,154,82,.28);
+    box-shadow:0 6px 16px rgba(95,29,45,.14);
+    font-size:.84rem;
+    font-weight:800;
+    line-height:1.2;
+    transition:transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+.pdf-button::before{
+    content:"PDF";
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:30px;
+    height:22px;
+    padding:0 5px;
+    border-radius:6px;
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.22);
+    font-size:.68rem;
+    letter-spacing:.04em;
+}
+
+.pdf-button:hover{
+    transform:translateY(-2px);
+    background:linear-gradient(135deg,var(--primary),#7b2e42);
+    box-shadow:0 10px 22px rgba(95,29,45,.22);
+    color:#ffffff;
+}
+
+.pdf-button:focus-visible{
+    outline:3px solid rgba(200,154,82,.40);
+    outline-offset:3px;
+}
+
+@media(max-width:520px){
+    .article-actions{
+        align-items:stretch;
+        flex-direction:column;
+    }
+
+    .article-actions .read-more,
+    .pdf-button{
+        width:100%;
+        justify-content:center;
+    }
+}
+
 </style>
 
 </head>
@@ -2887,6 +2965,8 @@ footer h3{color:#efd6a7}
 
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/ai-classroom-learning-2026.html"
@@ -2895,6 +2975,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/ai-classroom-learning-2026.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 
@@ -3000,6 +3092,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/electoral-participation-morocco-2026.html"
@@ -3008,6 +3102,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/electoral-participation-morocco-2026.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3114,6 +3220,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/school-entry-inequality-morocco-2026.html"
@@ -3122,6 +3230,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/school-entry-inequality-morocco-2026.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3228,6 +3348,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/elections-everyday-politics-morocco-2026.html"
@@ -3236,6 +3358,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/elections-everyday-politics-morocco-2026.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3310,6 +3444,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/bus-seat-social-rules.html"
@@ -3318,6 +3454,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/bus-seat-social-rules.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3398,6 +3546,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/neighbours-moroccan-city.html"
@@ -3406,6 +3556,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/neighbours-moroccan-city.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3482,6 +3644,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/public-policy-implementation.html"
@@ -3490,6 +3654,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/public-policy-implementation.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3570,6 +3746,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/wasta-morocco.html"
@@ -3578,6 +3756,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/wasta-morocco.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3656,6 +3846,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/waiting-hospitals-morocco.html"
@@ -3664,6 +3856,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/waiting-hospitals-morocco.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3742,6 +3946,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/phone-family-gatherings.html"
@@ -3750,6 +3956,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/phone-family-gatherings.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3830,6 +4048,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/digital-identity-social-media.html"
@@ -3838,6 +4058,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/digital-identity-social-media.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -3918,6 +4150,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/transformations-sociales-maroc.html"
@@ -3926,6 +4160,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/transformations-sociales-maroc.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -4000,6 +4246,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/cafe-maroc.html"
@@ -4008,6 +4256,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/cafe-maroc.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -4080,6 +4340,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/telephone-quartier.html"
@@ -4088,6 +4350,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/telephone-quartier.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
@@ -4162,6 +4436,8 @@ footer h3{color:#efd6a7}
 </p>
 
 
+<div class="article-actions">
+
 <a
     class="read-more"
     href="articles/droit-pratique.html"
@@ -4170,6 +4446,18 @@ footer h3{color:#efd6a7}
 اقرأ الشذرة كاملة ←
 
 </a>
+
+<a
+    class="pdf-button"
+    href="pdf/droit-pratique.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="عرض الشذرة بصيغة PDF"
+>
+عرض PDF
+</a>
+
+</div>
 
 
 <div class="article-meta">
